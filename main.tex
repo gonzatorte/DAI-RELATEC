@@ -4,87 +4,226 @@
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
-
-\title{Your Paper}
-\author{You}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{hyperref}
+\title{Criterios para seleccionar repositorios de datos abiertos en investigación educativa}
+\author{}
 
 \begin{document}
+
 \maketitle
 
 \begin{abstract}
-Resumen
+En el contexto de la ciencia abierta, la publicación de datos de investigación en repositorios accesibles se ha vuelto esencial para garantizar la transparencia, la reproducibilidad y el impacto de los estudios educativos. Este artículo tiene como objetivo brindar criterios clave para que investigadores educativos seleccionen y utilicen repositorios de datos abiertos, facilitando así la gestión, el almacenamiento y la difusión de sus datos de manera eficiente.\\
+
+Se parte de distinguir las necesidades que tienen los equipos de investigadores, en relación a los repositorios de datos de investigación, así como se analiza la postura de los investigadores frente a la publicación y apertura de los datos de investigación.\\
+
+De forma paralela, se realiza un relevamiento y posterior análisis de las herramientas tecnológicas existentes, que permiten guiar al usuario sobre cómo seleccionar un repositorio de datos de investigación, identificando en ellas, sus fortalezas y debilidades, generando así una guía útil al momento de publicar los datos de su investigación.\\
+
+El artículo también pone de manifiesto los desafíos a los que se enfrentan los equipos de investigadores, como la falta de incentivación institucional o las barreras técnicas.\\
+
+% Finalmente, se destaca el rol del investigador como agente activo que colabora en la  democratización del conocimiento científico, promoviendo una cultura de datos abiertos en el ámbito educativo.\\
 \end{abstract}
 
-\section{Introduction}
+\section{Introducción}
 
-Recuerden que hay una versión preliminar en GDocs en \href{https://docs.google.com/document/d/1ghdXv3ZXT8j1sazVHm9kVIpXPqwd5GHxNdKcqtgIQcY/edit?tab=t.0}{VERSION PRELIMINAR}.
+En el marco de la ciencia abierta, el acceso público a los datos de investigación ha adquirido una relevancia estratégica para la transformación de las prácticas científicas contemporáneas. Los datos abiertos de investigación son precisamente, según la definición de la UNESCO, aquellos que:
 
-\section{Some examples to get started}
+están disponibles de manera oportuna, en un formato fácil de utilizar, legible y modificable por personas y máquinas, de conformidad con los principios de buena gobernanza y gestión de los datos, principalmente los principios FAIR (Fáciles de encontrar, Accesibles, Interoperables y Reutilizables), respaldados por una labor periódica de conservación y mantenimiento. (Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura \cite[p.~10]{unesco2021}.\\
 
-\subsection{How to create Sections and Subsections}
+La publicación de datos abiertos, es decir, la apertura de datos, no solo fortalece la transparencia de los procesos investigativos, sino que también potencia la reproducibilidad de los resultados, el análisis secundario de información y el impacto social del conocimiento generado (\cite{ec2016}; \cite{wilkinson2016}).\\
 
-Foo bar.
+Según Babini, “en el tema de datos abiertos de investigación, hay consenso internacional que deben respetarse los principios FAIR” (\cite{babini2020}, p. 44).\\
 
-\subsection{How to include Figures}
+Los principios FAIR consisten en un conjunto de buenas prácticas para la gestión de datos, al decir de \cite{wilkinson2016}, FAIR son cuatro principios fundamentales que sirven de guía a los productores y editores de datos para definir que es una buena gestión de datos, así como también asegurar la utilización por parte de máquinas y humanos.\\
 
-Image env fig number \ref{fig:frog} in this section for an example.
-Comillas ``Add comment'' 
+Como parte fundamental de su funcionamiento, FAIR asume el uso de metadatos, datos que caracterizan y contextualizan a ese conjunto de datos y pueden incluir “aspectos tales como información de su creación, procedencia, tamaño, tipo de formato, definiciones de campos, así como cualquier otro archivo contextual relevante, como scripts de creación de datos o documentación textual” (\cite{bezjak2019}, p. 26), facilitando así la gestión, el intercambio y la difusión de los datos.\\
 
-More on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
+Un tipo de metadatos destacados son los identificadores persistentes, los cuales son identificadores globales y únicos, utilizados para referenciar o citar los datos publicados. Es ampliamente aceptado el uso de los identificadores de tipo DOI\footnote{\url{https://www.doi.org/}}.\\
 
-\begin{figure}
-\centering
-\includegraphics[width=0.25\linewidth]{frog.jpg}
-\caption{\label{fig:frog}This frog was uploaded via the file-tree menu.}
-\end{figure}
+Diversos organismos internacionales, como la \cite{unesco2021} y la \cite{oecd2020}, han instado a las comunidades académicas a adoptar políticas de datos abiertos que incluyan el uso de repositorios digitales para el almacenamiento, preservación y difusión de datos. Sin embargo, la adopción de estas prácticas en el ámbito educativo todavía presenta desafíos significativos: desde el desconocimiento de plataformas adecuadas hasta el cumplimiento de requisitos legales y éticos vinculados al tratamiento de datos personales (\cite{tenopir2011}).\\
 
-\subsection{How to add Tables}
+Las prácticas de publicación de datos de investigación han cobrado a lo largo del tiempo cada vez más protagonismo, así también la infraestructura que posibilita su gestión. A pesar de lo anterior, al día de hoy, sigue sin existir una única definición comúnmente aceptada sobre lo que es un repositorio de datos.\\
 
-see Table~\ref{tab:widgets}, for example. More on \href{https://www.overleaf.com/learn/latex/tables}{tables}. 
+\cite{borgman2018} define a los archivos digitales de datos (*Digital Data Archives)* como infraestructuras esenciales para el acceso abierto a datos de investigación, desempeñando roles fundamentales en las infraestructuras de conocimiento, que son redes sólidas de personas, artefactos e instituciones. Estos archivos mediante el intercambio de información entre diversas partes interesadas, facilitan el acceso y la reutilización de datos dentro y entre comunidades científicas.\\
 
-\begin{table}
-\centering
-\begin{tabular}{l|r}
-Item & Quantity \\\hline
-Widgets & 42 \\
-Gadgets & 13
-\end{tabular}
-\caption{\label{tab:widgets}An example table.}
-\end{table}
+Más recientemente, \cite{avila2024} define repositorio de datos de investigación, en el contexto de la ciencia abierta como:
 
+Sistemas que permiten almacenar, organizar, recuperar y acceder a conjuntos de datos de diversa naturaleza temática y tipología. En el ámbito de la investigación científica y académica, estos repositorios fomentan la reutilización de los datos y motivan el desarrollo de la ciencia abierta (p. 27).\\
 
-\subsection{How to add Lists}
+Si bien la carencia de una concepto universal, representa un problema en la definición del alcance del estudio, no lo es para la práctica de publicación de datos, puesto que allí se entiende a la infraestructura de investigación como un único sistema integrado.\\
 
-You can make lists with automatic numbering \dots
+Muchas veces esta concepción invisibiliza el esfuerzo necesario para que la infraestructura de la investigación opere de manera eficiente, pero es en la ausencia de esta coherencia en la infraestructura que el investigador comienza a percibir el proceso de publicación como una serie de requisitos burocráticos, acciones sin sentido ni relación, puesto que, al decir de \cite{borgman2016}, los datos no tienen valor ni significado de forma aislada; existen dentro de una infraestructura de conocimiento: una ecología de personas, prácticas, tecnologías, instituciones, objetos materiales y relaciones.\\
 
-\begin{enumerate}
-\item Like this,
-\item and like this.
-\end{enumerate}
+Otros enfoques más pragmáticos han sido planteados por \cite{pampel2013}, donde se concibe la creación de re3data, un catálogo central para la búsqueda y clasificación de los repositorios de datos.\\
 
+A más de 10 años de la creación de re3data, siguen existiendo resistencias en cuánto a la adopción de prácticas de publicación de datos y reutilización de los mismos. Algunos obstáculos, como las barreras metodológicas o de capacitación, se mantienen, pero en otros aspectos se ha encontrado evolución, como en la utilización de los repositorios institucionales.\\
 
+Analizar las tendencias en toda la comunidad científica es complejo y no hay un consenso sobre el estado actual de la adopción de prácticas de datos abiertos \cite{zuiderwijk2020}. Puesto que el proceso científico, así como también sus prácticas y en particular la publicación y reutilización de datos, son elementos transversales a todas las disciplinas, se identifican los aspectos positivos y negativos más relevantes para la adopción de prácticas de datos abiertos.\\
+
+Otros estudios, como los de \cite{khan2023}, comparan las diferentes necesidades y estados de adopción de diversas disciplinas científicas, entre ellas las ciencias sociales. Además, trata de cuantificar la relevancia de las necesidades de los investigadores en función de cada disciplina. Para el caso de las ciencias sociales, se revela una fuerte tendencia en la utilización de repositorios institucionales.\\
+
+En particular, estudios como los de \cite{kraehmer2023} revelan ciertas necesidades y barreras específicas para las ciencias sociales y también ciencias de la educación, marcando que ha habido un avance en la publicación de datos, pero reconociendo que el mismo no siempre es suficiente para garantizar la transparencia de los estudios.\\
+
+Estudios como el de \cite{pasquetto2024} recolectan algunas preocupaciones por parte de los investigadores en cuanto a la adopción de prácticas de publicación de datos en abierto, así como también proponen estrategias de mitigación.\\
+
+Dentro de estas dificultades se menciona la falta de infraestructura y capacitación, puesto que no todos los investigadores saben, por ejemplo, cómo llevar a cabo tareas técnicas como anonimizar correctamente sus datos o dónde depositarlos de modo tal que se brinden garantías sobre el acceso a los datos. Estudios como los de \cite{gomes2022} recolectan algunas de estas percepciones, las cuales, en ciertos casos, son producto de una falta de conocimiento. Se menciona repetidas veces la necesidad de recibir apoyo institucional mediante servicios de curaduría disciplinar, o simplemente la necesidad de mayor financiación para cubrir los esfuerzos que la publicación de datos implica. En este último punto, es importante visibilizar la red de apoyo interdisciplinar e interinstitucional existente, parte esencial de la capacitación básica.\\
+
+% \[Cuadro de ese articulo\]
+
+El reconocimiento de la propiedad intelectual es también una preocupación recurrente. Considerando el esfuerzo invertido en la publicación de datos, algunos investigadores piensan que compartir datos en abierto puede llevar a que otros se beneficien de años de trabajo sin reconocimiento suficiente. Esta es una preocupación que se extiende también a los artículos científicos, pero que se acentúa en el caso de los datos de investigación.
+Específicamente en relación a los datos asociados a una publicación, es útil mencionar la posibilidad de publicar bajo un periódo de embargo, reservandose así el autor el acceso a los datos mientras hace provecho de ellos en durante ese periodo. En la medida que la infraestructura de la información continúe evolucionando, el problema de la detección de estas faltas se podrá asemejar al de la detección de plagios, acarreando repercusiones similares. Incluso de manera bienintencionada, el punto anterior sobre la falta de capacitación puede colaborar a incurrir en la atribución indebida, por lo que no es redundante que los investigadores recomienden un modo correcto de citado al momento de publicar sus datos, reconociendo como los aportes de autores, coautores y diferentes miembros del equipo han colaborado con el ciclo de vida de los datos.\\
+
+Otros estudios como \cite{devriendt2021} y \cite{prosser2022} siguen objetivos similares enfocados en el área disciplinar de las ciencias sociales y resaltan la mayor presencia de estudios cualitativos en ésta área.\\
+
+Los investigadores cualitativos en el área de ciencias sociales mencionan temas relativos a la privacidad de sus datos y el compromiso ético que implica su publicación. En ciencias sociales, los datos suelen involucrar personas, y aunque se anonimicen, muchos investigadores temen que los participantes puedan ser reidentificados, especialmente en comunidades pequeñas o temas sensibles. A pesar de existir mecanismos para mitigarlo, como el consentimiento informado, la confianza sobre la responsabilidad de los repositorios frente a esos datos no es siempre clara para los productores de datos. De aquí surge la necesidad de que las plataformas se ciñan a políticas y acuerdos de disponibilidad de los datos publicados (Data Availability Statements \- DAS) claros y accesibles, contribuyendo a la difusión de un base ética común a todas las partes involucradas en el ciclo de vida de los datos.\\
+
+Estudios recientes como los de \cite{lamb2024} o \cite{gray2023} ratifican algunos desafíos propios de las investigaciones cualitativas. Los investigadores cualitativos destacan que los datos (como entrevistas o diarios de campo) necesitan un conocimiento contextual profundo para ser interpretados adecuadamente (\cite{gray2023}), algo difícil de transmitir al abrir los datos. Incluso destaca que, cuando no existe una reutilización explícita o formal de los datos, existe la posibilidad de que los mismos sean interpretados incorrectamente debido a la complejidad inherente de su origen. También destaca que, aún en los casos donde la reutilización los datos o reproducibilidad del estudio no sea posible debido a la especificidad del contexto interpretativo y metodológico, la publicación de datos sigue aportando a la transparencia del estudio, y la narrativa. Sobre el punto de la narrativa, se recuerda el valor de ésta, y publicación de notas de laboratorio como una manera de plasmarla.\\
+
+% \[Dar más sobre la parte del contexto que es la más importante para CS\]
+
+% \[  
+% Existe mayor reutilización fuera de las disciplinas donde se originan los datos. Un efecto similar sucede por fuera del ámbito académico, siendo las CS consumidores de datos no provenientes del ámbito académico (eg: repositorios gubernamentales de censos) y productores de datos consumidos por la ciudadanía en general (atendiendo a la función de difusión de la ciencia abierta?).  
+% \]  
+
+En vistas de estas particularidad de las ciencias sociales, es que \cite{logan2021} sugiere una serie de preguntas y soluciones sencillas que colaboran enormemente con la calidad de los datos publicados. En las etapas finales del estudio de \cite{logan2021} se plantea una variedad de opciones donde realizar el depósito y publicación de los datos, sin lineamientos específicos de como llegar realizar esta selección. Es en este momento que el investigador se enfrenta a esta decisión, y es aquí que la utilización de un catálogo de repositorios resulta útil.\\
+
+Los catálogos de repositorios son sistemas que permiten buscar, filtrar y evaluar en base a los criterios presentados las diferentes opciones para realizar la publicación de los datos. En el presente se analizaran diferentes catálogos y su adecuación al caso de uso planteado.\\
+
+\section{Método}
+
+Dado que en el presente estudio, se busca comprender los principales criterios de selección de repositorios de datos de investigación, con énfasis en la investigación educativa, es que se realiza una indagación desde los equipos científicos en general, y los resultados se aplican para este campo de estudio en concreto con algunos matices según se ha explicado en la introducción.\\
+
+A su vez, además de estudiar y plantear diversos enfoques tecnológicos para colaborar con la publicación de datos es que se propone analizar la evolución de los repositorios de datos.\\
+
+Esta investigación se desarrolla en dos etapas: por un lado, se analizan las necesidades propias de los equipos de investigación y a su vez, se analizan las herramientas existentes que pueden cumplir con esas necesidades.\\
+
+Para el análisis de necesidades de los equipos de investigación, se realiza una entrevista, en formato semiestructurado. Este formato, permite reconocer la propia opinión de un experto, además de indagar en los temas que afectan al presente proyecto.\\
+
+A su vez, esta entrevista se complementa con una revisión bibliográfica, con el fin de identificar cuáles y cómo interoperan las necesidades de los investigadores en educación, en el contexto de la publicación de datos abiertos de investigación.\\
+
+Por otra parte, se realiza un análisis sobre los catálogos de repositorios de datos abiertos existentes, identificando en cada uno, sus características, fortalezas y debilidades, a fin de servir de guía en el proceso de selección, al momento de publicar los datos de investigación.\\
+
+\section{Resultados}
+
+\subsection{Entrevista}
+
+En relación a las prácticas de datos abiertos, es que se entrevista a Juan Maldini, quien es Licenciado en Bibliotecología por la UdelaR\footnote{Universidad de la República (Uruguay)}, actualmente, gerente de la Unidad de Servicios Digitales de la ANII\footnote{Agencia Nacional de Investigación e Innovación}. Participó en la creación del repositorio de datos de investigación de la mencionada agencia: REDATA\footnote{\url{https://redata.anii.org.uy/}}.\\
+
+De la entrevista, lo que se desprende como requisito fundamental para los investigadores es, primero, que se les asigne un DOI (ese tipo de identificador persistente). Esta urgencia surge como necesidad impuesta a los investigadores.\\
+
+La utilización de identificadores DOI (así como también otros identificadores persistentes de buena calidad) contribuye al cumpliento de los principios FAIR.\\
+
+El entrevistado detalla que muchas veces las revistas de publicación solicitan el DOI, debido a que son utilizados para evaluar los artículos, siendo que el DOI, asociado al conjunto de datos de investigación, permite verificar la fundamentación de las conclusiones que se plantean en ese artículo.\\
+
+En este sentido, Juan Maldini reconoce que los repositorios de datos de carácter institucional son relativamente recientes. En esta línea, se destaca que los repositorios que tienen mayor vigencia en Uruguay, son los repositorios de datos disciplinares.\\
+
+Otro elemento destacado por Maldini es la sostenibilidad o la perduración en el tiempo del repositorio, señalándole como un elemento fundamental para los investigadores que están pensando en depositar datos. Esto refleja un beneficio no sólo para quien publica, sino que se reconoce, que los conjuntos de datos publicados, van a tener más utilidad dentro de la comunidad académica específica, la cual se ve nutrida con esta información.\\
+
+Asociado a lo anterior, otro de los requisitos que se infieren, desde la percepción del entrevistado, es la visibilidad. Se enfatiza que sobre este punto no se tienen datos contrastables, pero que es la impresión que tiene desde su rol profesional, explicando que reconoce que los investigadores quieren que, si publican sus datos, esos datos estén disponibles a largo plazo y que sean visibles, sobre todo para colegas que trabajan temas similares.\\
+
+Al momento de centrarse en REDATA, Maldini, como gestor de repositorios, identifica la importancia de la interoperabilidad, considerándolo como un tema fundamental. Al respecto, afirma que se necesita que los conjuntos de datos que se alojan en el repositorio puedan ser cosechados o recogidos en repositorios disciplinares y, al mismo tiempo, que sea posible recoger conjuntos de datos publicados por investigadores nacionales que ya estén disponibles en repositorios disciplinares.\\
+
+\subsection{Revisión bibliográfica}
+
+Estudios como los de \cite{barczak2022}, concluyen que la mayoría de los investigadores estarían abiertos a compartir sus datos si se les solicita; sin embargo, el intercambio de datos en general no es muy frecuente.\\
+
+Por otra parte, estudios latinoamericanos, enfocados en la investigación educativa, concluyen que “en el ámbito académico y científico, hay que profundizar acciones de difusión sobre la importancia de los datos abiertos y su almacenamiento, ya que cerca del 50\% de los consultados ha manifestado no conocer estos repositorios” \cite[p.~6]{casali2022}.\\
+
+Además, de un grupo de 97 investigadores activos, “cerca del 27\% del total de los encuestados carga sus datos de investigación en repositorios” \cite[p.~6]{casali2022}, identificando al igual que \cite{barczak2022}, que los investigadores presentan una actitud positiva sobre la intencionalidad de publicar los datos de investigación \cite{casali2022}.\\
+
+De forma similar, se plantea que también son necesarias estrategias y acciones que colaboren a sortear barreras tales como “el tiempo y esfuerzo requerido para compartirlos y la falta de financiamiento para la tarea de estandarizar los datos, así como el tratamiento necesario para respetar restricciones relativas a la seguridad y confidencialidad de los datos” \cite[p.~6]{casali2022}.\\
+
+% aqui falta decir que es lo que piden los investigadores al repositorio para depositar en él sus datos.
+
+\section{Relevamiento tecnológico}
+
+% [
+% Incluir un relevamiento rapido de repositorios generalistas, citar https://zenodo.org/records/7946938
+% ]
+% [
+% Incluír una guia de selección de repositorios en gral
+% ]
+
+Como se indicó anteriormente, el relevamiento tecnológico supone, en este estudio, la descripción y posterior análisis de los catálogos de repositorios más conocidos. decir que son catálogos de repositorios de datos abiertos.
+
+\subsection{ROAR}
+
+Es un directorio global de repositorios de acceso abierto. Aloja repositorios que ofrecen acceso abierto a recursos y productos académicos, por lo que además de repositorios de datos y artículos de investigación abiertos, también incluye otros elementos como recursos educativos abiertos.  
+Cada registro del repositorio dentro de OpenDOAR pasa por un proceso de revisión formal y es monitoreado periódicamente, como es explicado en la página del catálogo.  
+Por su amplio espectro, no permite filtrar ni buscar resultados en función de las características concretamente relevantes para un repositorio de datos.  
+No está recomendado su uso para la búsqueda de repositorio de datos por falta de especificidad.  
+Según el análisis de \cite{schabinger2023}, ROAR también recopila información de diferentes fuentes, como OpenDOAR.
+
+\subsection{OpenDOAR}
+
+Este catálogo está enfocado en el acceso abierto en general, por lo que no solo contiene repositorios para el área de la investigación.  
+El proceso de registro de un nuevo repositorio no exige mucha información y en ese sentido es bastante laxo. El proceso de publicación es abierto aunque controlado, permitiendo que cualquier persona ingrese nuevos registros en el catálogo.  
+No está recomendado su uso para búsqueda de repositorio puesto que, al igual que ROAR, carece de especificidad.
+
+\subsection{OpenAIRE Graph}
+Es un servicio que interconecta varios catálogos enfocados en acceso abierto para investigación. En algunos incluso logra mejorar la calidad de los registros corrigiendo y normalizando información de sus fuentes primarias.
+No solo incluye repositorios de datos como resultado de sus búsquedas, sino repositorios de investigación en general. Recoge también información sobre las relaciones entre repositorios, autores, instituciones, agencias de financiación y políticas (entre otras), formando un grafo de conocimiento.
+La información relativa a repositorios de datos de investigación es la misma que la del catálogo re3data, aunque el facilitar las conexiones con el resto de la infraestructura de investigación facilita las consultas.
+OpenAIRE es parte esencial de la EOSC\footnote{European Open Science Cloud (\url{https://eosc.eu/})}, lo que garantiza en cierta medida su sustentabilidad.
+
+\subsection{FAIRsharing}
+FAIRsharing es definido en su página web \cite{fairsharing2023}, como un portal web para búsquedas, que nuclea tres registros interconectados, conteniendo descripciones de estándares, bases de datos y políticas de datos. 
+Los registros son revisados y seleccionados manualmente, tanto internamente como por colaboración colectiva, combinados a fin de proveer una visión integrada e incentivar el uso de los principios FAIR. Los repositorios de datos de investigación forman parte del registro de bases de datos.
+\cite{schabinger2023} también resalta el aspecto educativo e informativo del servicio, siendo un buen punto de entrada para entender la dinámica entre los repositorios y el resto del ecosistema de investigación.
+En relación a otros catálogos, el mismo sitio de FAIRsharing informa que OpenAIRE y FAIRsharing comparten sus datos automáticamente.
+FAIRSharing cuenta con el respaldo del Data Readiness Group de la Universidad de Oxford\footnote{\url{https://datareadiness.eng.ox.ac.uk/\#people}}.
+
+\subsection{Repository Finder/DataCite Commons}
+Repository Finder\footnote{\url{https://repositoryfinder.datacite.org/}} es parte de la herramienta DataCite Commons\footnote{\url{https://commons.datacite.org/about}}, que se define como una interfaz web de consulta para diversos resultados académicos (artículos académicos, artículos de investigación, colecciones de datos), investigadores, autores, organizaciones de investigación, repositorios y a sus interconexiones, recolectado gracias a la estandarización y uso difundido de identificadores persistentes. La información sobre los diversos actores es recolectada automáticamente desde diversas fuentes como, DataCite, CrossRef, ORCiD, ROR, re3data, entre otros.
+DataCite recomienda el uso de re3data para el registro de nuevos repositorios de datos.
+
+\subsection{Re3data}
+Según su propia página web, re3data es un registro global de repositorios de datos de investigación que cubre repositorios de datos de investigación de diferentes disciplinas académicas. 
+Incluye repositorios que permiten el almacenamiento permanente y el acceso a conjuntos de datos a investigadores, organismos de financiación, editores e instituciones académicas. A su vez, este registro promueve una cultura de intercambio, mayor acceso y mejor visibilidad de los datos de investigación. 
+El mismo entró en funcionamiento en el año 2012 y ha sido financiado por la Fundación Alemana de Investigación (\cite{dfg2023}).
+
+\subsection{Resumen}
+De la comparativa, surgen las siguientes conclusiones:
 \begin{itemize}
-\item Like this,
-\item and like this.
+    \item re3data es actualmente la principal fuente de datos primarios sobre repositorios de datos de investigación abierto.
+    \item Tanto FAIRsharing como OpenAIRE permiten visualizar y navegar la infraestructura de investigación al relacionar diferentes fuentes de datos. Tienen un gran valor agregado como fuentes de datos secundarias.
+    \item De las opciones mencionadas, DataCite es el catálogo que provee mayor y más detallada información sobre los contenidos de cada repositorio, aunque no es completamente transparente en cuánto a su funcionamiento.
+    \item Alternativas como OpenAlex para el manejo de repositorios e histogramas.
+    % \item [Vendor lock-in: Evitar herramientas propietarias y con poca transparencia en el uso de los datos, fundamentar pq]
+    \item Los catálogos de repositorios generales mencionados openDOAR y ROAR, no aportan datos con el suficiente nivel de especificidad para un análisis automático.
 \end{itemize}
 
-\subsection{How to add Citations and a References List}
+\section{Conclusiones y discusión}
 
-You can simply upload a \verb|.bib| file containing your BibTeX entries, created with a tool such as JabRef. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|. You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX. 
+Este trabajo se desarrolla, en el contexto de la investigación educativa, en particular en la publicación de datos de investigación asociados a esta área. En ese sentido, se reconoce que la investigación educativa presenta varias características comunes a la investigación, en general, en relación a la gestión de datos de investigación.\\
 
-The third cite example at \cite{AgenciaGobiernoElectronico2024}.
+En particular, al enfocarse en las necesidades que los equipos de investigación plantean, se reconoce cómo la interoperabilidad, la necesidad de apoyo institucional y la necesidad de asistencia técnica capacitación, son las principales urgencias del cuerpo investigador, sobre los repositorios de datos de investigación.\\
 
-If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded account}, you can also import your Mendeley or Zotero library directly as a \verb|.bib| file, via the upload menu in the file-tree.
+Además, se identifica que la mayoría de los investigadores desconocen las opciones disponibles de repositorios de datos de investigación, aunque manifiestan la necesidad de conocer las prácticas de publicación de datos, siendo que las mismas no están muy difundidas.\\
 
-\subsection{Good luck!}
+Se destaca que desde la postura de los investigadores, existe una gran apertura hacia la publicación de datos, reconociendo los beneficios, tanto para quién publica cómo para quién accede a las publicaciones.\\
 
- at \url{https://www.overleaf.com/contact}.
+Se destaca que las herramientas tecnológicas, existentes hasta el momento, no plantean una solución definitiva para los equipos de investigación educativa, es decir, una única herramienta no cubre todas las necesidades, relativas a la publicación de datos, que manifiestan los investigadores, recogidas en el presente estudio.\\
 
-\bibliographystyle{alpha}
+Independientemente de esto, sí es posible realizar una ordenamiento de los catálogos de repositorios de datos de investigación, según el grado de cumplimiento de las necesidades de los investigadores.\\
+
+En este sentido, FAIRSharing es la herramienta que combina mejores niveles de curaduría y calidad de datos. También es importante destacar que es la que brinda el mejor modelo de sustentabilidad y mayor transparencia en su criterios y procesos de todas las opciones analizadas.
+Permite una visión muy orgánica del proceso de publicación y la infraestructura de investigación abierta.
+Puesto que la base de datos de FAIRSharing carece de algunos registros, se recomienda realizar una consulta en paralelo sobre DataCite commons.\\
+
+En estas condiciones, se ha demostrado un proceso de evolución y mejora en cuanto a las tecnologías para catalogación de repositorios, donde re3data, si bien sigue cumpliendo un rol fundamental como fuente primaria de información, ha sido desplazado por mejores herramientas desde el punto de vista de usabilidad o interoperabilidad.\\
+
+% Se destaca en el presente trabajo, la actitud positiva que presentan los investigadores sobre la publicación de datos de investigación, derribando las barreras que se presentan en torno al tema, dónde en varias oportunidades supone un esfuerzo (por el desconocimiento o por la necesidad de formatos específicos), más que una ayuda al propio investigador.
+
+
+\bibliographystyle{apalike}
 \bibliography{sample}
 
 \end{document}

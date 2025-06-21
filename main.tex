@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[spanish]{babel}
+\usepackage[spanish,english,portuguese]{babel}
 
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
@@ -12,15 +12,40 @@
 \usepackage{natbib}
 \usepackage{url}
 \usepackage{hyperref}
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
 \title{Criterios para seleccionar repositorios de datos abiertos en investigación educativa}
 
-%\author{Gonzalo Torterolo-Silva - ORCID https://orcid.org/0000-0002-1426-562X}
-%\author{Regina Motz - ORCID https://orcid.org/0000-0002-1426-562X}
+% \author{Gonzalo Torterolo-Silva - ORCID https://orcid.org/0000-0002-1426-562X}
+% \author{Regina Motz - ORCID https://orcid.org/0000-0002-1426-562X}
 
 \begin{document}
-
+\selectlanguage{spanish}
 \maketitle
 
+\selectlanguage{english}
+\begin{abstract}
+This article discusses the criteria that influence the selection of research data repositories by educational researchers. It highlights the growing importance of public access to data in the context of open science and examines the FAIR (Findable, Accessible, Interoperable, Reusable) principles as a guide for data management. The study is based on a mixed methodology, including a literature review, expert consultation and analysis of repository catalogs.\\
+
+The literature review identified key factors such as repository reputation, ease of use, metadata availability, and compliance with FAIR principles. Expert consultation emphasized the importance of persistent identifiers, sustainability and interoperability of repositories. Catalog analysis revealed that FAIRSharing stands out for its curation and data quality, while re3data is a primary source of information.\\
+
+The article concludes that educational researchers need clear tools and criteria for selecting appropriate repositories. It stresses the need for repositories that facilitate interoperability and that have institutional support and technical assistance. The study provides valuable information to promote the adoption of open data practices in the field of educational research.\\
+\end{abstract}
+
+\selectlanguage{portuguese}
+\begin{abstract}
+Este artigo discute os critérios que influenciam a seleção de repositórios de dados de pesquisa por pesquisadores educacionais. Ele destaca a importância crescente do acesso público aos dados no contexto da ciência aberta e examina os princípios FAIR (Findable, Accessible, Interoperable, Reusable) como um guia para o gerenciamento de dados. O estudo baseia-se em uma metodologia mista, incluindo uma revisão da literatura, uma consulta a especialistas e uma análise de catálogos de repositórios.\\
+
+A revisão da literatura identificou fatores importantes, como a reputação do repositório, a facilidade de uso, a disponibilidade de metadados e a conformidade com os princípios FAIR. A consulta a especialistas enfatizou a importância dos identificadores persistentes, da sustentabilidade e da interoperabilidade dos repositórios. A análise dos catálogos revelou que o FAIRSharing se destaca por sua curadoria e qualidade de dados, enquanto o re3data é uma fonte primária de informações.\\
+
+O artigo conclui que os pesquisadores educacionais precisam de ferramentas e critérios claros para selecionar os repositórios adequados. Ele destaca a necessidade de repositórios que facilitem a interoperabilidade e que tenham apoio institucional e assistência técnica. O estudo fornece informações valiosas para promover a adoção de práticas de dados abertos no campo da pesquisa educacional.\\
+\end{abstract}
+
+\selectlanguage{spanish}
 \begin{abstract}
 Este artículo analiza los criterios que influyen en la selección de repositorios de datos de investigación por parte de investigadores educativos. Se destaca la creciente importancia del acceso público a los datos en el contexto de la ciencia abierta y se examinan los principios FAIR (Encontrables, Accesibles, Interoperables, Reutilizables) como guía para la gestión de datos. El estudio se basa en una metodología mixta, que incluye una revisión bibliográfica, una consulta a expertos y un análisis de catálogos de repositorios.\\
 
@@ -30,6 +55,9 @@ El artículo concluye que los investigadores educativos necesitan herramientas y
 
 % Finalmente, se destaca el rol del investigador como agente activo que colabora en la  democratización del conocimiento científico, promoviendo una cultura de datos abiertos en el ámbito educativo.\\
 \end{abstract}
+
+\keywords{research-tools, online-catalogs, metadata, data-use, archive}
+
 
 \section{Introducción}
 
@@ -41,7 +69,7 @@ Ante este panorama promisorio, organismos internacionales como la \cite{unesco20
 
 No obstante, como advierte \cite{borgman2016} en su análisis sobre las ecologías del conocimiento, los datos solo alcanzan su pleno valor científico cuando se integran en ecosistemas robustos que articulen coherentemente dimensiones técnicas, prácticas comunitarias e institucionales. Precisamente esta articulación presenta desafíos particulares en el ámbito educativo y de ciencias sociales, donde, como documentan \cite{kraehmer2023} y \cite{gray2023}, la disponibilidad de repositorios disciplinares especializados palidece en comparación con otras áreas del conocimiento. Esta disparidad resulta paradójica si consideramos la complejidad intrínseca de los datos educativos, que abarcan desde mediciones cuantitativas estandarizadas hasta registros etnográficos profundamente contextualizados, frecuentemente conteniendo información sensible sobre menores de edad en entornos escolares específicos (\cite{gomes2022}).\\
 
-Los principios FAIR (\cite{wilkinson2016}) y TRUST (\cite{Lin2020TRUST}) constituyen marcos de referencia valiosos para evaluar la calidad de los repositorios científicos. La exhaustiva caracterización de \cite{Behnke2020FAIRfeatures} detalla cómo estos incluyen tanto requerimientos organizacionales (como políticas claras de gestión de datos y soporte para formatos estándar) como técnicos (desde metadatos granularizados hasta sistemas de identificadores persistentes). Sin embargo, su implementación en investigación educativa enfrenta obstáculos específicos, especialmente cuando se trabaja con datos cualitativos que como  destaca Antonio et al. (2020), demandan niveles excepcionales de contextualización y mecanismos especializados de protección ética que muchos repositorios generalistas no están preparados para ofrecer.\\
+Los principios FAIR (\cite{wilkinson2016}) y TRUST (\cite{Lin2020TRUST}) constituyen marcos de referencia valiosos para evaluar la calidad de los repositorios científicos. La exhaustiva caracterización de \cite{Behnke2020FAIRfeatures} detalla cómo estos incluyen tanto requerimientos organizacionales (como políticas claras de gestión de datos y soporte para formatos estándar) como técnicos (desde metadatos granularizados hasta sistemas de identificadores persistentes). Sin embargo, su implementación en investigación educativa enfrenta obstáculos específicos, especialmente cuando se trabaja con datos cualitativos que como  destaca \cite{antonio}, demandan niveles excepcionales de contextualización y mecanismos especializados de protección ética que muchos repositorios generalistas no están preparados para ofrecer.\\
 
 Frente a estos desafíos, iniciativas como re3data \cite{pampel2013} han buscado crear catálogos integrados que faciliten la localización y evaluación de repositorios especializados.\\
 

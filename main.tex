@@ -13,17 +13,37 @@
 \usepackage{natbib}
 \usepackage{url}
 \usepackage{hyperref}
+
+\usepackage{color}
+
+\def \bchregi {\begin{color}{red}} 
+\def \echregi {\end{color}}
+
+\def \bchgon {\begin{color}{blue}} 
+\def \echgon {\end{color}}
+
 \providecommand{\keywords}[1]
 {
   \small	
   \textbf{\textit{Keywords---}} #1
 }
 
-%title{Criterios para seleccionar repositorios de datos abiertos en investigación educativa}
-\title{Identificando dimensiones de calidad en repositorios de datos abiertos de investigación educativa}
+%\title{Identificando dimensiones de calidad en repositorios de datos abiertos de investigación educativa}
+\title{Open Data Repositories for Educational Research: A study on FAIRSharing, re3data, and repository selection practices}
 % \author{Gonzalo Torterolo-Silva - ORCID https://orcid.org/0009-0003-5004-0342}
 % \author{Regina Motz - ORCID https://orcid.org/0000-0002-1426-562X}
-% \author{Regina Motz - ORCID https://orcid.org/0000-0002-8257-5291}
+% \author{Edelweis Rohrer - ORCID https://orcid.org/0000-0002-8257-5291}
+% \author{
+%   Torterolo-Silva, Gonzalo\\
+%   \texttt{https://orcid.org/0009-0003-5004-0342}
+%   \and
+%   Motz, Regina\\
+%   \texttt{https://orcid.org/0000-0002-1426-562X}
+%   \and
+%   Rohrer, Edelweis\\
+%   \texttt{https://orcid.org/0000-0002-8257-5291}
+% }
+% \institute{UdelaR}
 
 \begin{document}
 \selectlanguage{spanish}
@@ -37,8 +57,9 @@ El artículo concluye que los investigadores educativos necesitan herramientas y
       
 % Finalmente, se destaca el rol del investigador como agente activo que colabora en la  democratización del conocimiento científico, promoviendo una cultura de datos abiertos en el ámbito educativo.\\
 \end{abstract}
-% 5 keywords de ERIC en espa`nol
-\keywords{open data repositories, metadata, data-use}
+% Regi: 5 keywords de ERIC en espa`nol
+% Gonzalo: No hay version en español de las keywords (ver por ej https://vocabularyserver.com/eric/index.php?tema=255&/archives), por lo que traduje a mi criterio
+\keywords{herramientas-de-investigación, archivos, catálogos-en-linea, metadatos, uso-de-datos}
 
 
 \selectlanguage{english}
@@ -48,8 +69,12 @@ The literature review identified key factors such as repository reputation, ease
 The article concludes that educational researchers need clear tools and criteria for selecting appropriate repositories. It stresses the need for repositories that facilitate interoperability and that have institutional support and technical assistance. The study provides valuable information to promote the adoption of open data practices in the field of educational research.
 \end{abstract}
 % 5 keywords de ERIC
-% completar keyword
-\keywords{open data repositories, metadata, data-use}
+% https://vocabularyserver.com/eric/index.php?tema=6128&/research-tools
+% https://vocabularyserver.com/eric/index.php?tema=255&/archives
+% https://vocabularyserver.com/eric/index.php?tema=3223&/online-catalogs
+% https://vocabularyserver.com/eric/index.php?tema=4001&/metadata
+% https://vocabularyserver.com/eric/index.php?tema=5348&/data-use
+\keywords{research-tools, archives, online-catalogs, metadata, data-use}
 
 
 \selectlanguage{portuguese}
@@ -58,7 +83,7 @@ Este artigo discute os critérios que influenciam a seleção de repositórios d
 A revisão da literatura identificou fatores importantes, como a reputação do repositório, a facilidade de uso, a disponibilidade de metadados e a conformidade com os princípios FAIR. A consulta a especialistas enfatizou a importância dos identificadores persistentes, da sustentabilidade e da interoperabilidade dos repositórios. A análise dos catálogos revelou que o FAIRSharing se destaca por sua curadoria e qualidade de dados, enquanto o re3data é uma fonte primária de informações.
 O artigo conclui que os pesquisadores educacionais precisam de ferramentas e critérios claros para selecionar os repositórios adequados. Ele destaca a necessidade de repositórios que facilitem a interoperabilidade e que tenham apoio institucional e assistência técnica. O estudo fornece informações valiosas para promover a adoção de práticas de dados abertos no campo da pesquisa educacional.
 \end{abstract}
-\keywords{open data repositories, metadata, data-use}
+\keywords{ferramentas-de-pesquisa, arquivos, catálogos-online, metadados, uso-de-dados}
 
 
 \section{Introducción}
@@ -69,9 +94,9 @@ Esta aproximación normativa no solo robustece los pilares de transparencia y re
 
 Ante este panorama promisorio, organismos internacionales como la \cite{unesco2021} y la \cite{oecd2020} han impulsado políticas que fomentan el uso de repositorios digitales especializados para el almacenamiento, preservación y diseminación ética de datos científicos. Como argumentan \cite{borgman2018}, estas infraestructuras digitales han dejado de ser meros almacenes de información para convertirse en nodos fundamentales de las redes contemporáneas de producción de conocimiento, facilitando no solo el acceso sino también la interoperabilidad y el enriquecimiento progresivo de los datasets mediante sucesivas reutilizaciones. En esta misma línea, la reciente conceptualización de \cite[p.~27]{avila2024} enfatiza su rol como sistemas dinámicos que permiten ``almacenar, organizar, recuperar y acceder a conjuntos de datos de diversa naturaleza temática y tipológica'', constituyéndose así en motores esenciales para la ciencia abierta.\\
 
-No obstante, como advierte \cite{borgman2016} en su análisis sobre las ecologías del conocimiento, los datos solo alcanzan su pleno valor científico cuando se integran en ecosistemas robustos que articulen coherentemente dimensiones técnicas, prácticas comunitarias e institucionales. Precisamente esta articulación presenta desafíos particulares en el ámbito educativo y de ciencias sociales, donde, como documentan \cite{kraehmer2023} y \cite{gray2023}, la disponibilidad de repositorios disciplinares especializados palidece en comparación con otras áreas del conocimiento. Esta disparidad resulta paradójica si consideramos la complejidad intrínseca de los datos educativos, que abarcan desde mediciones cuantitativas estandarizadas hasta registros etnográficos profundamente contextualizados, frecuentemente conteniendo información sensible sobre menores de edad en entornos escolares específicos (\cite{gomes2022}).\\
+No obstante, como advierte \cite{borgman2016} en su análisis sobre las ecologías del conocimiento, los datos solo alcanzan su pleno valor científico cuando se integran en ecosistemas robustos que articulen coherentemente dimensiones técnicas, prácticas comunitarias e institucionales. Precisamente esta articulación presenta desafíos particulares en el ámbito educativo y de ciencias sociales, donde, como documentan \cite{kraehmer2023} y \bchregi ATENCIÓN: ESTA CITA ES UNA ALUCINACIÓN: \cite{gray2023} - LA CORRECTA ES \cite{Lamb2024} \echregi, la disponibilidad de repositorios disciplinares especializados palidece en comparación con otras áreas del conocimiento. Esta disparidad resulta paradójica si consideramos la complejidad intrínseca de los datos educativos, que abarcan desde mediciones cuantitativas estandarizadas hasta registros etnográficos profundamente contextualizados, frecuentemente conteniendo información sensible sobre menores de edad en entornos escolares específicos (\cite{gomes2022}).\\
 
-Los principios FAIR (\cite{wilkinson2016}) y TRUST (\cite{Lin2020TRUST}) constituyen marcos de referencia valiosos para evaluar la calidad de los repositorios científicos. La exhaustiva caracterización de \cite{Behnke2020FAIRfeatures} detalla cómo estos incluyen tanto requerimientos organizacionales (como políticas claras de gestión de datos y soporte para formatos estándar) como técnicos (desde metadatos granularizados hasta sistemas de identificadores persistentes). Sin embargo, su implementación en investigación educativa enfrenta obstáculos específicos, especialmente cuando se trabaja con datos cualitativos que como  destaca \cite{antonio}, demandan niveles excepcionales de contextualización y mecanismos especializados de protección ética que muchos repositorios generalistas no están preparados para ofrecer.\\
+Los principios FAIR (\cite{wilkinson2016}) y TRUST (\cite{Lin2020TRUST}) constituyen marcos de referencia valiosos para evaluar la calidad de los repositorios científicos. La exhaustiva caracterización de \bchregi ver que se cambien en todos los lugares \cite{Behnke2020FAIRfeatures} por \cite{behnke_2020_5361952} \echregi detalla cómo estos incluyen tanto requerimientos organizacionales (como políticas claras de gestión de datos y soporte para formatos estándar) como técnicos (desde metadatos granularizados hasta sistemas de identificadores persistentes). Sin embargo, su implementación en investigación educativa enfrenta obstáculos específicos, especialmente cuando se trabaja con datos cualitativos que, como  destaca \cite{antonio}, demandan niveles excepcionales de contextualización y mecanismos especializados de protección ética que muchos repositorios generalistas no están preparados para ofrecer.\\
 
 Frente a estos desafíos, iniciativas como re3data \cite{pampel2013} han buscado crear catálogos integrados que faciliten la localización y evaluación de repositorios especializados.\\
 
@@ -89,12 +114,12 @@ La revisión bibliográfica incluyó la búsqueda y el análisis de artículos c
 
 Estudios como el de \cite{barczak2022} señalan que, si bien la mayoría de los investigadores se muestran abiertos a compartir sus datos cuando se les solicita, el intercambio de datos no es una práctica generalizada. \cite{barczak2022} proponen que, para abordar esta problemática, se deben establecer mecanismos institucionales, como incentivos para el intercambio de datos y políticas de revistas que requieran la divulgación de datos para las publicaciones. También sugieren brindar apoyo administrativo a los investigadores en la preparación de los datos.\\
 
-Investigaciones centradas en el contexto educativo, como la de \cite{casali2022}, indican que existe un desconocimiento significativo sobre los repositorios de datos abiertos entre los investigadores del área. \cite{casali2022} también identifican una actitud positiva de los investigadores hacia la publicación de sus datos, pero señalan la necesidad de políticas nacionales y programas institucionales que promuevan esta práctica. Además, destacan barreras como el tiempo y el esfuerzo requeridos para compartir los datos, la falta de financiamiento para la estandarización de los datos y las restricciones relacionadas con la seguridad y la confidencialidad de los datos.\\
+Investigaciones centradas en el contexto educativo, como la de \bchregi ATENCIÓN: esta referencia es una alucinación: \cite{casali2022} REVISAR QUE ESTEN BIEN TODAS LAS REFERENCIAS. La correcta para este caso es: \cite{casali2022open}  ARREGLAR \echregi, indican que existe un desconocimiento significativo sobre los repositorios de datos abiertos entre los investigadores del área. \bchregi \cite{casali2022} \echregi también identifican una actitud positiva de los investigadores hacia la publicación de sus datos, pero señalan la necesidad de políticas nacionales y programas institucionales que promuevan esta práctica. Además, destacan barreras como el tiempo y el esfuerzo requeridos para compartir los datos, la falta de financiamiento para la estandarización de los datos y las restricciones relacionadas con la seguridad y la confidencialidad de los datos.\\
 
 \subsection{Consulta a Expertos}
 
 Para complementar y enriquecer la revisión bibliográfica, se realizó una consulta semiestructurada a un experto en gestión de repositorios de datos, con amplia experiencia en la creación y administración de repositorios institucionales. Esta entrevista permitió obtener una perspectiva práctica y actualizada sobre los requerimientos, desafíos y expectativas de los investigadores al publicar datos, así como sobre las funcionalidades y limitaciones de las plataformas existentes.
-La modalidad semiestructurada facilitó la exploración profunda de temas relevantes, sin restringir la espontaneidad del diálogo, lo que contribuyó a validar y ampliar los hallazgos teóricos con evidencia empírica y experiencia directa.\\
+La modalidad semiestructurada facilitó la exploración profunda de temas relevantes, sin restringir la espontaneidad del diálogo, lo que contribuyó a validar y ampliar los hallazgos teóricos con evidencia empírica y experiencia directa.
 
 \subsection{Análisis de Catálogos de Repositorios}
 

@@ -118,43 +118,37 @@ Este estudo fornece informações valiosas para promover a adoção de práticas
 \selectlanguage{spanish}
 \section{Introducción}
 \label{intro}
-En la era digital actual, el movimiento de ciencia abierta ha reconfigurado profundamente los paradigmas de producción y circulación del conocimiento científico. Dentro de este marco transformador, el acceso público a los datos de investigación emerge como un componente estratégico fundamental, particularmente en el campo educativo. \  La aplicación de estos paradigmas no solo robustece los pilares de transparencia y reproducibilidad que sustentan el método científico \cite{OECD2020}, sino que además facilita el análisis secundario y contribuye al impacto social del conocimiento \citep{ec2016, wilkinson2016}. Los beneficios potenciales son particularmente significativos en el ámbito educativo, donde la posibilidad de contrastar resultados entre diferentes contextos socioculturales y sistemas pedagógicos podría generar insumos para la evolución de las políticas públicas en educación. 
+En la era digital actual, el movimiento de ciencia abierta ha reconfigurado profundamente los paradigmas de producción y circulación del conocimiento científico. Dentro de este marco transformador, el acceso público a los datos de investigación emerge como un componente estratégico fundamental, particularmente en el campo educativo. \  La aplicación de estos paradigmas no solo robustece los pilares de transparencia y reproducibilidad que sustentan el método científico \citep{OECD2020}, sino que además facilita el análisis secundario y contribuye al impacto social del conocimiento \citep{ec2016, wilkinson2016}. Los beneficios potenciales son particularmente significativos en el ámbito educativo, donde la posibilidad de contrastar resultados entre diferentes contextos socioculturales y sistemas pedagógicos podría generar insumos para la evolución de las políticas públicas en educación. 
 
 La \citet[p.~10]{unesco2021} conceptualiza los datos abiertos de investigación como aquellos que deben estar ``disponibles de manera oportuna, en un formato fácil de utilizar, legible y modificable por personas y máquinas'', articulándose bajo los principios FAIR (Fáciles de encontrar, Accesibles, Interoperables y Reutilizables) \citep{wilkinson2016}.  La disponibilidad de repositorios alineados con estos principios facilita la tarea de los investigadores, tanto para depositar como para reusar datos. Sin embargo, no es trivial decidir en qué repositorio depositar, organizar y gestionar los datos de investigación. En este sentido, los principios TRUST \citep{Lin2020TRUST} representan un marco de referencia muy valioso para evaluar la calidad de los repositorios científicos,  promoviendo la Transparencia (políticas de uso claras), Responsabilidad (en lo que refiere a la gestión de las colecciones de datos), el foco en el Usuario (disponibilidad de  herramientas para explorar, ubicar y reusar datos), Sostenibilidad (disponibilidad de los servicios de acceso a los datos  a largo plazo) y Tecnología (uso e implementación de estándares y herramientas adecuadas para la gestión y curación de los datos).
-La exhaustiva caracterización de \citep{behnke_2020_5361952} detalla cómo estos principios  incluyen tanto requerimientos organizacionales (como políticas claras de gestión de datos y soporte para formatos estándar) como técnicos (desde metadatos granularizados hasta sistemas de identificadores persistentes).  \\
+La exhaustiva caracterización de \citet{behnke_2020_5361952} detalla cómo estos principios  incluyen tanto requerimientos organizacionales (como políticas claras de gestión de datos y soporte para formatos estándar) como técnicos (desde metadatos granularizados hasta sistemas de identificadores persistentes).  \\
 
 
 La organización y agrupación de colecciones de datos de investigación en repositorios responde a diferentes criterios de acuerdo a los cuales es posible categorizar los repositorios como disciplinares, cuando contienen datos 
 de un área específica de conocimiento, generalistas, en caso contrario, y también institucionales, en caso de albergar datos de una institución en particular. %o no,  y entre repositorios institucionales o huérfanos (contienen datos que no pertenecen a una institución en particular). 
 A su vez, en algunas disciplinas, por ejemplo economía o epidemiología, la mayor parte de los datos gestionados son cuantitativos, mientras que en otras, como las ciencias sociales y la educación, los datos son en su mayor parte cualitativos. Cada una de estas categorías de repositorios puede requerir la priorización de algunos principios sobre otros, o el uso de diferentes estándares o tecnologías para su implementación. En general, los datos de investigación de una misma disciplina tienen características en común, por lo que los requerimientos tecnológicos son similares. %Por ejemplo, en algunas disciplinas los datos deben estar actualizados en todo momento, por lo que van a usar los mismos a estándares de metadatos. 
 %ACA DECIR que en general los datos de una misma disciplina son de naturaleza similar (es verdad?), por ejemplo requieren del mismo tipo de metadatos (por ejemplo datos que deben estar siempre actualizados....o lo que más importa es la reputación de la fuente), entonces la plataforma tecnológica va a tener los mismos requerimientos....
-En particular, la investigación educativa enfrenta obstáculos específicos, especialmente cuando se trabaja con datos cualitativos que, como destaca \citep{antonio}, demandan niveles excepcionales de contextualización y mecanismos especializados de protección ética, implementados con tecnologías específicas, que muchos repositorios generalistas no están preparados para ofrecer.   
-Otros estudios como el de \citep{strecker_disappearing_repos_23} informan sobre los riesgos de estos repositorios para cumplir con los estándares de calidad, indicando además que los repositorios disciplinares afines a humanidades y ciencias sociales son de los más afectados por este tipo de problemas. Otros autores, como \citep{google_dataset_aglomeration} y \citep{ Gerasimov2024} también advierten sobre tendencias de centralización de la mayoría de los datasets sobre el conjunto de repositorios generalistas. Paradójicamente, varias recomendaciones de estos repositorios generalistas alientan a los investigadores a utilizar repositorios disciplinares e institucionales \cite{barbosa_2024_11105430}.
-En particular, los trabajos de \citep{Jia25} y \citep{avila2024} destacan por su análisis exhaustivo de las pautas para seleccionar repositorios de datos científicos confiables. 
-También organismos internacionales como la \cite{unesco2021} y la \cite{OECD2020}, alineados con los principios FAIR y TRUST, han impulsado políticas que fomentan el uso de repositorios digitales especializados para el almacenamiento, preservación y diseminación ética de datos científicos. 
+En particular, la investigación educativa enfrenta obstáculos específicos, especialmente cuando se trabaja con datos cualitativos que, como destaca \citet{antonio}, demandan niveles excepcionales de contextualización y mecanismos especializados de protección ética, implementados con tecnologías específicas, que muchos repositorios generalistas no están preparados para ofrecer.   
+Otros estudios como el de \citet{strecker_disappearing_repos_23} informan sobre los riesgos de estos repositorios para cumplir con los estándares de calidad, indicando además que los repositorios disciplinares afines a humanidades y ciencias sociales son de los más afectados por este tipo de problemas. Otros autores, como \citet{google_dataset_aglomeration, Gerasimov2024} también advierten sobre tendencias de centralización de la mayoría de los datasets sobre el conjunto de repositorios generalistas. Paradójicamente, varias recomendaciones de estos repositorios generalistas alientan a los investigadores a utilizar repositorios disciplinares e institucionales \citep{barbosa_2024_11105430}.
+En particular, los trabajos de \citet{Jia25} y \citet{avila2024} destacan por su análisis exhaustivo de las pautas para seleccionar repositorios de datos científicos confiables. 
+También organismos internacionales como la \citet{unesco2021} y la \citet{OECD2020}, alineados con los principios FAIR y TRUST, han impulsado políticas que fomentan el uso de repositorios digitales especializados para el almacenamiento, preservación y diseminación ética de datos científicos.
 
-Como argumentan \citep{borgman2018}, estas infraestructuras digitales han dejado de ser meros almacenes de información para convertirse en nodos fundamentales de las redes contemporáneas de producción de conocimiento, facilitando no solo el acceso sino también la interoperabilidad y el enriquecimiento progresivo de los datasets mediante sucesivas reutilizaciones. En esta misma línea, la reciente conceptualización de \citep[p.~27]{avila2024} enfatiza su rol como sistemas dinámicos que permiten ``almacenar, organizar, recuperar y acceder a conjuntos de datos de diversa naturaleza temática y tipológica'', constituyéndose así en motores esenciales para la ciencia abierta. \\
+Como argumentan \citet{borgman2018}, estas infraestructuras digitales han dejado de ser meros almacenes de información para convertirse en nodos fundamentales de las redes contemporáneas de producción de conocimiento, facilitando no solo el acceso sino también la interoperabilidad y el enriquecimiento progresivo de los datasets mediante sucesivas reutilizaciones. En esta misma línea, la reciente conceptualización de \citep[p.~27]{avila2024} enfatiza su rol como sistemas dinámicos que permiten ``almacenar, organizar, recuperar y acceder a conjuntos de datos de diversa naturaleza temática y tipológica'', constituyéndose así en motores esenciales para la ciencia abierta. \\
 
-La aplicación de los principios FAIR \cite{wilkinson2016} y TRUST \cite{Lin2020TRUST}  enfrentan retos particulares en disciplinas como la educación y las ciencias sociales, donde la heterogeneidad, sensibilidad y complejidad de los datos dificultan la estandarización y la creación de infraestructuras especializadas, alineadas con los requerimientos de estas disciplinas. Sin embargo, la escasez de repositorios disciplinares en estas áreas, sumada a desafíos éticos, legales y culturales, obliga a los investigadores a recurrir mayoritariamente a repositorios institucionales o generalistas, que no siempre satisfacen los requerimientos específicos para la gestión óptima de datos educativos y sociales.
+La aplicación de los principios FAIR \citep{wilkinson2016} y TRUST \citep{Lin2020TRUST} enfrentan retos particulares en disciplinas como la educación y las ciencias sociales, donde la heterogeneidad, sensibilidad y complejidad de los datos dificultan la estandarización y la creación de infraestructuras especializadas, alineadas con los requerimientos de estas disciplinas. Sin embargo, la escasez de repositorios disciplinares en estas áreas, sumada a desafíos éticos, legales y culturales, obliga a los investigadores a recurrir mayoritariamente a repositorios institucionales o generalistas, que no siempre satisfacen los requerimientos específicos para la gestión óptima de datos educativos y sociales.
 
-Como advierte \citep{borgman2016} en su análisis sobre las ecologías del conocimiento, los datos solo alcanzan su pleno valor científico cuando se integran en ecosistemas robustos que articulen coherentemente dimensiones técnicas, prácticas comunitarias e institucionales. Precisamente, esta articulación presenta desafíos particulares en el ámbito educativo y de ciencias sociales, donde la disponibilidad de repositorios disciplinares especializados es escasa en comparación con otras áreas del conocimiento \cite{kraehmer2023,Lamb2024}. Esta disparidad resulta paradójica si consideramos la complejidad intrínseca de los datos educativos, que abarcan desde mediciones cuantitativas estandarizadas hasta registros etnográficos profundamente contextualizados, frecuentemente conteniendo información sensible ( por ej. sobre menores de edad en entornos escolares específicos \cite{gomes2022}).\\
- 
-Frente a estos desafíos, iniciativas como re3data \cite{pampel2013} han buscado crear catálogos integrados que faciliten la localización y evaluación de repositorios especializados. La selección informada de repositorios se vuelve entonces un desafío crucial. Los catálogos de repositorios 
-emergen como herramientas clave para buscar, filtrar y evaluar opciones según criterios técnicos, éticos y disciplinares. 
+Como advierte \citet{borgman2016} en su análisis sobre las ecologías del conocimiento, los datos solo alcanzan su pleno valor científico cuando se integran en ecosistemas robustos que articulen coherentemente dimensiones técnicas, prácticas comunitarias e institucionales. Precisamente, esta articulación presenta desafíos particulares en el ámbito educativo y de ciencias sociales, donde la disponibilidad de repositorios disciplinares especializados es escasa en comparación con otras áreas del conocimiento \citep{kraehmer2023,Lamb2024}. Esta disparidad resulta paradójica si consideramos la complejidad intrínseca de los datos educativos, que abarcan desde mediciones cuantitativas estandarizadas hasta registros etnográficos profundamente contextualizados, frecuentemente conteniendo información sensible (por ej. sobre menores de edad en entornos escolares específicos \citep{gomes2022}).\\
 
-Sin embargo, referente a repositorios de datos de investigaciones en educación, se observa una muy  escasa presencia disciplinar. Como muestra la Fig.~\ref{catalogos} la cantidad de repositorios de datos etiquetados como de educación obtenidos en  los catálogos re3data, FAIRsharing y DataCite Commons son un muy bajo número respecto al número total de repositorios indexados.
+Frente a estos desafíos, iniciativas como re3data \citep{pampel2013} han buscado crear catálogos integrados que faciliten la localización y evaluación de repositorios especializados. La selección informada de repositorios se vuelve entonces un desafío crucial. Los catálogos de repositorios emergen como herramientas clave para buscar, filtrar y evaluar opciones según criterios técnicos, éticos y disciplinares. 
+
+Sin embargo, en lo que refiere a repositorios de datos de investigaciones en educación, se observa una muy escasa presencia disciplinar. A modo de ejemplo, de acuerdo a la información recabada en junio de 2025, los catálogos FAIRSharing, DataCite Commons y re3Data tienen registrados en total 1252, 1767 y 3259 repositorios respectivamente, de los cuales únicamente 22, 5 y 47 corresponden a repositorios de datos de investigación en el área de la educación.
+
 En este sentido, creemos que este trabajo aporta en prestar atención a las necesidades de los investigadores de la educación, para continuar mejorando el servicio que los repositorios pueden ofrecerles, para incentivar así su desarrollo.
 
-%Algunos catálogos permiten entender la capacidad de los repositorios para expresar, mediante el uso de estándares, el contexto de cada investigación, %(paradatos), de manera est´andarizada haciendo que sus datos sean más fácilmente encontrables. Otros permiten descubrir la disponibilidad de servicios relacionados, como curaduría disciplinar, soporte, foros, entorno colaborativo o integración con redes sociales. 
-
-%\bchgon
-%Hay que explicar (al menos para los números de re3data, que en estas estadísticas se debe considerar aquellos repositorios activos actualmente, que sean de educación. Según las columnas identificar cuantos tienene cosas como certificaciones, y cuales permiten publicar en "abierto" y cuales son disciplinares y cuantos son de exclusivamente de investigación (algún repo gob aparece colado, muy pocos).
-%\echgon
-
-\begin{figure}[h]
-\includegraphics[width=0.9\textwidth]{catalogos.jpg}
-\caption{Repositorios de datos de investigaciones educativas registrados en los catálogos al 26/6/2025} \label{catalogos}
-\end{figure}
+%\begin{figure}[h]
+%\includegraphics[width=0.9\textwidth]{catalogos.jpg}
+%\caption{Repositorios de datos de investigaciones educativas registrados en los catálogos al %26/6/2025} \label{catalogos}
+%\end{figure}
 
 Este artículo analiza las necesidades para la publicación de datos en educación y ciencias sociales, y las características  de los repositorios más valorados por las investigadoras y los investigadores de estas disciplinas, considerando sus preocupaciones éticas, técnicas y legales. Además, este trabajo explora el papel de los catálogos de repositorios en la selección de repositorios como toma de decisiones informadas, con el objetivo de fortalecer la cultura de datos abiertos y contribuir al avance de la ciencia abierta en estas disciplinas.\\
 
@@ -220,7 +214,7 @@ Análisis: Transcripción y codificación para rectificar o ratificar categoría
 
     Muestra:  6 Catálogos de amplio uso internacional(OpenDOAR, ROAR, OpenAIR, Figshare,DataCite Commons
     
-    Variables evaluadas:COMPLETAR
+    Variables evaluadas: actividad del repositorio, creación de identificadores persistentes, soporte para especificar el contexto, cumplimiento de estándares para interoperabilidad,  adhesión a políticas de licenciamiento y sostenibilidad.
 
 \end{itemize}
 
@@ -296,10 +290,10 @@ Esta sección presenta los resultados obtenidos a partir de la revisión bibliog
 \subsection{Resultados de revisión bibliográfica}
 
 Numerosos estudios se han centrado en identificar los factores que impactan en la voluntad de los investigadores en compartir sus datos en abierto y se ha hecho un esfuerzo por destacar algunos de ellos aquí, especialmente desde la perspectiva de los repositorios. 
-La revisión bibliográfica realizada muestra que los estudios abarcan encuestas, revisiones sistemáticas de la literatura, meta-análisis, grupos focales y mesas redondas, de las más actuales \citep{tenopir2011,revision2020,barczak2022,casali2022open, researchers2022,borycz2023,logan2021,researchers2024,malasya,bio-uy}. Es interesante observar que los estudios son con investigadores de distintas disciplinas, distinto nivel de expertise y de diferentes contextos geográficos. Curiosamente, pocos de estos estudios se han realizado con investigadores de Ciencias de la Educación. Entre los más destacados que involucran opiniones de investigadores relacionados con la disciplina Educación encontramos el trabajo de \citet{casali2022open} que analiza una encuesta administrada a investigadores de la comunidad LACLO (Conferencia Latinoamericana de Tecnologías de Aprendizaje) y los trabajos de \cite{logan2021} y de \cite{guia} 
+La revisión bibliográfica realizada muestra que los estudios abarcan encuestas, revisiones sistemáticas de la literatura, meta-análisis, grupos focales y mesas redondas, de las más actuales \citep{tenopir2011,revision2020,barczak2022,casali2022open, researchers2022,borycz2023,logan2021,researchers2024,malasya,bio-uy}. Es interesante observar que los estudios son con investigadores de distintas disciplinas, distinto nivel de expertise y de diferentes contextos geográficos. Curiosamente, pocos de estos estudios se han realizado con investigadores de Ciencias de la Educación. Entre los más destacados que involucran opiniones de investigadores relacionados con la disciplina Educación encontramos el trabajo de \citet{casali2022open} que analiza una encuesta administrada a investigadores de la comunidad LACLO (Conferencia Latinoamericana de Tecnologías de Aprendizaje) y los trabajos de \citet{logan2021} y de \citet{guia} 
 que presentan guías sobre publicación de datos abiertos expresamente dirigidas para investigadores en Educación.\\
 
-Mientras que el trabajo de \cite{casali2022open} destaca barreras como el tiempo y el esfuerzo requeridos para compartir los datos, la falta de financiamiento para la estandarización de los datos y las restricciones relacionadas con la seguridad y la confidencialidad de los datos, observamos que en los trabajos de \cite{logan2021, guia} se presta especial atención a los procedimientos para mantener la seguridad y la confidencialidad de los datos, evidenciando que este constituye un problema en común.\\
+Mientras que el trabajo de \citet{casali2022open} destaca barreras como el tiempo y el esfuerzo requeridos para compartir los datos, la falta de financiamiento para la estandarización de los datos y las restricciones relacionadas con la seguridad y la confidencialidad de los datos, observamos que en los trabajos de \citet{logan2021, guia} se presta especial atención a los procedimientos para mantener la seguridad y la confidencialidad de los datos, evidenciando que este constituye un problema en común.\\
 
 La mayoría de los trabajos coinciden en reconocer como aspectos importantes en la problemática planteada por los investigadores el esfuerzo extra que significa curar los datos para su publicación en abierto.  Mientras en general se atribuye esta problemática al desarrollo de los repositorios poco centrados en el usuario, para otros autores como \citet{borycz2023} y \citet{casali2022open}, se debe a la falta de apoyo administrativo a los investigadores en la preparación de los datos.\\
 
@@ -308,7 +302,7 @@ Respecto al caso específico de datos procedentes de investigaciones cualitativa
 
 Los investigadores cualitativos en el área de ciencias sociales mencionan temas relativos a la privacidad de sus datos y el compromiso ético que implica su publicación. En ciencias sociales, los datos suelen involucrar personas, y aunque se anonimicen, muchos investigadores temen que los participantes puedan ser reidentificados, especialmente en comunidades pequeñas o temas sensibles \citep{kraehmer2023}. A pesar de existir mecanismos para mitigarlo, como el consentimiento informado, la responsabilidad de los repositorios en cuanto a la custodia de los datos no siempre resulta fácil de comprender para los productores de datos \citep{prosser2022}.\\
 
-Estudios recientes como el de \cite{Lamb2024} ratifican algunos desafíos propios de las investigaciones cualitativas. Los investigadores cualitativos destacan que los datos (como entrevistas o diarios de campo) necesitan un conocimiento contextual profundo para ser interpretados adecuadamente cuando otros investigadores deciden reusar el dataset. \\
+Estudios recientes como el de \citet{Lamb2024} ratifican algunos desafíos propios de las investigaciones cualitativas. Los investigadores cualitativos destacan que los datos (como entrevistas o diarios de campo) necesitan un conocimiento contextual profundo para ser interpretados adecuadamente cuando otros investigadores deciden reusar el dataset. \\
 
 %algo difícil de transmitir al abrir los datos.
 %\bchedel o en los propios datos abiertos? \echedel
@@ -365,7 +359,7 @@ y ontologías disciplinares (por ej.:  OECD Education Taxonomy) para facilitar l
 
 \subsection*{Adhesión a políticas}
 Otro de los aspectos a considerar de un repositorio, que dependen de factores políticos o legales, son sus políticas de uso y de preservación o sostenibilidad. 
-El problema de repositorios que se extinguen es un problema grave como reportan \cite{strecker_disappearing_repos_23}.
+El problema de repositorios que se extinguen es un problema grave como reportan \citet{strecker_disappearing_repos_23}.
 Algunos catálogos, como FAIRSharing, facilitan la evaluación de estos factores, permitiendo identificar la relación entre las políticas específicas de cada repositorio con políticas más generales.\\
 Si tomamos el ejemplo de la NIH\footnote{\url{https://www.nih.gov/}} como financiador, este podría imponer el cumplimiento de sus términos de uso de datos \footnote{\label{nih_policy_fairsharing} 2023 Final NIH Policy for Data Management and Sharing - \url{https://fairsharing.org/FAIRsharing.7861ef}}. FAIRSharing es capaz de desplegar los repositorios compatibles con esta política, visualizados mediante el grafo de la Fig.~\ref{fig:fairsharing_nih_policy_repo_usages}. De esta forma, un investigador con un proyecto financiado por NIH puede limitar la selección del repositorio a utilizar por los encontrados en la consulta que produce el grafo de la Fig. ~\ref{fig:fairsharing_nih_policy_repo_usages}.\\
 
@@ -378,24 +372,21 @@ Si tomamos el ejemplo de la NIH\footnote{\url{https://www.nih.gov/}} como financ
     \label{fig:fairsharing_nih_policy_repo_usages}
 \end{figure}
 
-Otro mecanismo que aporta en la identificación de las adhesiones de los repositorios a ciertas políticas de uso y de sostenibilidad son las \emph{Certificaciones}. Las certificaciones de repositorios son mecanismos de evaluación externa que garantizan que un repositorio cumple con estándares de calidad, preservación y buenas prácticas en la gestión de datos. Las certificaciones son especialmente útiles para visualizar si los repositorios cumplen con políticas de preservación o sostenibilidad. Por ejemplo, un repositorio con alguna certificación indica que debió demostrar alguna de estas funcionalidades: asigna DOIs, usa esquemas de metadatos disciplinares,  cuenta con una infraestructura técnica sostenible (backups, migración de formatos), ofrece gestión de versiones para el control de cambios en los datasets, tiene un soporte técnico para dar respuesta a incidencias y que está respaldado por una institución estable (universidad, organismo público). Distintos sellos de certificaciones evalúan diferentes funcionalidades. Por ejemplo, un repositorio con certificación CoreTrustSeal \footnote{ www.coretrustseal.org} está verificado para los criterios de asignación de DOI y preservación por un período mayor a 10 años, mientras que con un sello ISO 16363 \footnote{https://www.iso.org/standard/87472.html} tiene una verificación exhaustiva en los criterios de cumplimiento legal (ej., GDPR, propiedad intelectual) pero no en asignación de DOI.\\
-
+Otro mecanismo que aporta en la identificación de las adhesiones de los repositorios a ciertas políticas de uso y de sostenibilidad son las \emph{Certificaciones}. Las certificaciones de repositorios son mecanismos de evaluación externa que garantizan que un repositorio cumple con estándares de calidad, preservación y buenas prácticas en la gestión de datos. Las certificaciones son especialmente útiles para visualizar si los repositorios cumplen con políticas de preservación o sostenibilidad. Por ejemplo, un repositorio con alguna certificación indica que debió demostrar alguna de estas funcionalidades: asigna DOIs, usa esquemas de metadatos disciplinares,  cuenta con una infraestructura técnica sostenible (backups, migración de formatos), ofrece gestión de versiones para el control de cambios en los datasets, tiene un soporte técnico para dar respuesta a incidencias y que está respaldado por una institución estable (universidad, organismo público). Distintos sellos de certificaciones evalúan diferentes funcionalidades. Por ejemplo, un repositorio con certificación CoreTrustSeal \footnote{\url{https://www.coretrustseal.org}} está verificado para los criterios de asignación de DOI y preservación por un período mayor a 10 años, mientras que con un sello ISO 16363 \footnote{\url{https://www.iso.org/standard/87472.html}} tiene una verificación exhaustiva en los criterios de cumplimiento legal (ej., GDPR, propiedad intelectual) pero no en asignación de DOI.\\
 
 
 Los catálogos recopilan datos de organismos certificadores y estandarizan la visualización de certificaciones para facilitar la comparación. Por ejemplo, re3data muestra el año de certificación y su vigencia.  FAIRsharing no certifica, pero evalúa y recomienda repositorios que adhieren al uso de estándares de metadatos y a principios FAIR. Además incluye un filtro por certificación (ej., CoreTrustSeal, ISO 16363) y proporciona enlaces a los informes de certificación oficiales. Un investigador que busca un repositorio para datos de educación puede usar FAIRsharing y filtrar por CoreTrustSeal y verificar en re3data si el repositorio tiene certificación vigente.
 
-
-%Estas certificaciones aportan criterios objetivos para ayudar a investigadores e instituciones a seleccionar el repositorio más adecuado para depositar sus datasets.
-
-
-\bchregi -----------------revision DE ESTA SECCIÓN hasta acá--------------------------- \echregi \\
-
-\bchregi mover a otro lado lo que sigue o borrarlo \\
+\subsection*{Compatibilidad de los repositorios con servicios}
+Conocer la capacidad del repositorio para proveer o integrarse con ciertos servicios especializados en el área de investigación, así como las condiciones bajo las cuales los provee (precio del servicio o el nivel de disponibilidad del servicio), puede resultar relevante para los investigadores.  
+Para enumerar algunos de estos servicios y funcionalidades se pueden mencionar la capacidad de realizar o recibir revisiones formales, la posibilidad de establecer períodos de embargo, asistencia técnica especializada o la disponibilidad de servicios de curaduría disciplinar.\\
+En particular, para el caso de repositorios de datos de investigación cualitativos, la presencia o integración de servicios como anonimización, o mecanismos de control de acceso resulta valiosa para los investigadores. 
+Catálogos como OpenAIRE ofrecen información sobre la integración de los diferentes repositorios con el ecosistema de servicios de la EOSC por ejemplo con el filtro ``Compatibility Level''  se pueden visualizar el nivel de compatibilidad del repositorio con servicios como : Amnesia\footnote{\url{https://www.openaire.eu/amnesia-guide}} servicio de anonimización, OpenAIRE AAI \footnote{\url{https://catalogue.openaire.eu/service/openaire.aai/overview}} API para servicio de acceso, Argos \footnote{\url{https://catalogue.openaire.eu/service/openaire.argos/overview}} servicio de Plan de Gestión de Datos, entre otros.  \\
 
 
-Los catálogos de repositorios de datos, como re3data, OpenAIRE, DataCite Commons, entre otros, son herramientas fundamentales en el ecosistema de la ciencia abierta y la gestión de datos de investigación. Estos catálogos actúan como índices o motores de búsqueda que permiten localizar repositorios de datos de investigación. En lugar de buscar de forma dispersa, los investigadores pueden utilizar estos catálogos para encontrar fuentes organizadas, de confianza y con políticas claras de acceso y preservación. Por ejemplo, DataCite Commons y re3data ofrecen interfaces de búsqueda que permiten filtrar y acceder a un gran volumen de registros de datos de investigación, lo que simplifica el proceso de encontrar información específica sin necesidad de conocimientos técnicos avanzados.\\
+El Cuadro~\ref{tab:catalog_main_features} ofrece un resumen de las principales características de los catálogos de repositorios revisados.
 
-Los catálogos proporcionan información sobre las características de cada repositorio (licencias, políticas de preservación, acceso abierto, certificaciones, etc.), ayudando a seleccionar los que cumplen con los requisitos buscados por los investigadores.\\
+
 
 %*********************************************
 %Muchos de estos catálogos promueven el uso de estándares comunes en la descripción de repositorios y datos, lo cual facilita el descubrimiento automatizado de los repositorios y sus datasets, su vinculación con publicaciones científicas y la construcción de infraestructuras digitales integradas. \\
@@ -428,22 +419,23 @@ Los catálogos proporcionan información sobre las características de cada repo
  %   \emph{Re3data}: Registro global de repositorios de datos de investigación de diferentes disciplinas académicas.
 %\end{itemize}
 
-% \parbox{3cm}
+\small
 \begin{table}[h]
 \centering
-    \begin{tabular}{l | p{8cm}}
+    \begin{tabular}{l | p{11cm}}
+    \emph{Catálogo} & \emph{Características}\\
     \hline
-    OpenDOAR & Permite conocer información básica como dirección de acceso o información de contacto y tipo de información manejada por el repositorio. \\ \hline
-    ROAR & Además de proporcionar información similar a la de OpenDOAR, permite conocer la disciplina asociada al repositorio. Se especializa en repositorios de publicaciones académicas, aunque puede contenter repositorios de datos de investigacion de manera casual. \\ \hline
-    Re3data & De manera análoga a ROAR, Re3data se especializa en describir repositorios de investigación, aunque de datos. Es el catálogo que provee la mayor cantidad de registros de repositorios. Publica vigencia de certificaciones. \\ \hline
-    FAIRsharing & Destaca por su capacidad de navegar entre las relaciones de los estándares y políticas con los diferentes repositorios de datos. Incluye repositorios de investigacion, aunque estos pueden ser de datos, de artículos, de multimedia, de software, etc. Publica adhesión a principios FAIR. \\ \hline
-    DataCite Commons & Integra información sobre repositorios de investigación de diversa índole, y destaca por proveer información relativa al contenido de los mismos de manera sintética, aunque no permite conocer tan a detalle algunas características propias del repositorio ni proporciona criterios de filtrado tan avanzados como Re3data. \\ \hline
-    OpenAIRE & De manera similar a DataCite, permite conocer, aunque no permite navegar entre las relaciones de los repositorios con tanta facilidad como FAIRSharing. Destaca la calidad con la que se maneja la procedencia de los datos, permitiendo conocer que repositorios comparten contenidos y de cual de los anteriores catálogos proviene la información del repositorio. \\ \hline
+    OpenDOAR & Permite conocer información básica del repositorio. \\ \hline
+    ROAR &  Similar a  OpenDOAR, pero permite conocer la disciplina asociada al repositorio. Especializado en repositorios de publicaciones académicas, contiene repositorios de datos de investigacion de manera casual. \\ \hline
+    Re3data & Se especializa en describir repositorios de datos de investigación. Provee la mayor cantidad de registros de repositorios. Muy útil su publicación de vigencia de certificaciones.  \\ \hline
+    FAIRsharing & Posee la capacidad de navegar entre las relaciones de los estándares y políticas con los diferentes repositorios de datos. Dentro de los estándares incluye los principios FAIR, TRUST y distintas certificaciones. Incluye repositorios variados (de datos, documentos, multimedia, software, etc.). \\ \hline
+    DataCite Commons & Integra información sobre repositorios de investigación de diversa índole, y destaca por proveer información relativa al contenido de los mismos de manera sintética, aunque no permite conocer muy a detalle algunas características propias del repositorio ni proporciona criterios de filtrado avanzados como Re3data. \\ \hline
+    OpenAIRE & Similar a DataCite, permite conocer, aunque no navegar entre las relaciones de los repositorios con tanta facilidad como FAIRSharing. Destaca la calidad con la que se maneja la procedencia de los datos, permite conocer que repositorios comparten contenidos y de cual catálogo proviene la información del repositorio.\\ \hline
     \end{tabular}
     \caption{\label{tab:catalog_main_features}Principales características de los catálogos de repositorios.}
 \end{table}
+\normalsize
 
-\echregi
 
 %Este análisis se basó en el trabajo del Data Repository Attributes Working Group\footnote{\url{https://www.rd-alliance.org/groups/data-repository-attributes-wg/}}, que detalla los atributos más relevantes para la evaluación de repositorios de datos de investigación. Asimismo, resultaron de gran utilidad los atributos definidos por \citet{witt_2024_11221855}, que incluyen aspectos como asignación de identificadores persistentes, soporte para metadatos, interoperabilidad, políticas de licenciamiento, sostenibilidad y cumplimiento normativo. Sin embargo, los autores advierten que no es fácil para los investigadores conocer si un repositorio cumple o no con  estas características, siendo en su mayoría difíciles de conocer de antemano. Esto afecta directamente la capacidad de un investigador para encontrar un repositorio adecuado donde publicar. Frente a esta limitación, los catálogos de repositorios facilitan el acceso a esta información de manera más directa.\\ 
 
@@ -525,64 +517,70 @@ Los catálogos proporcionan información sobre las características de cada repo
 %  \end{figure}
 %=========================================================
 
-\bchregi VER DE MOVER FIGURAS: \echregi
-Estas 3 figuras de busqueda general se pueden inclúir al inicio donde se presentan los catálogos existentes para ilustrar el uso que los investigadores podrían experimentar.\\
+%\bchregi VER DE MOVER FIGURAS: \echregi
+%Estas 3 figuras de busqueda general se pueden inclúir al inicio donde se presentan los catálogos existentes para ilustrar el uso que los investigadores podrían experimentar.\\
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/openaire_gral_search.png}
-    \caption{
-Búsqueda general de repositorios de datos de instigación certificados y con cierto nivel de compatibilidad con la EOSC - OpenAIRE Explore - Obtenido el 26/06/2025
-    }
-    \label{fig:openaire_gral_search}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/openaire_gral_search.png}
+%    \caption{
+%Búsqueda general de repositorios de datos de instigación certificados y con cierto nivel de compatibilidad con la EOSC - OpenAIRE Explore - Obtenido el 26/06/2025
+%    }
+%    \label{fig:openaire_gral_search}
+%\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/re3data_busqueda_general.png}
-    \caption{
-Búsqueda general de repositorios de datos de instigación disciplinares, de acceso abiertos, certificados y de educación - re3data - Obtenido el 26/06/2025
-    }
-    \label{fig:re3data_busqueda_general}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/re3data_busqueda_general.png}
+%    \caption{
+%Búsqueda general de repositorios de datos de instigación disciplinares, de acceso abiertos, certificados y de educación - re3data - Obtenido el 26/06/2025
+%    }
+%    \label{fig:re3data_busqueda_general}
+%\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/repositorio_openaire.png}
-    \caption{Descripción de un repositorio - OpenAIRE Explore - Obtenido el 26/02/2025}
-    \label{fig:repositorio_openaire}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/repositorio_openaire.png}
+%    \caption{Descripción de un repositorio - OpenAIRE Explore - Obtenido el 26/02/2025}
+%    \label{fig:repositorio_openaire}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% end BUSQUEDA
+
+
 
 %La presencia de certificaciones es una manera sencilla de evaluar la sostenibilidad de los repositorios u otros aspectos políticos, así como también el uso de buenas prácticas a nivel técnico. Las certificaciones son estándares de calidad que evaluan aspectos como sostenibilidad, preservación y accesibilidad de un repositorio. El otorgamiento de estos es un proceso que suele ser conducido por instituciones confiables especializadas en repositorios como CoreTrustSeal \footnote{\url{https://www.coretrustseal.org/}} \bchgon mencionar TRUST?\echgon, y garantizan en cierta medida que esos estándares fueron logrados. Los catálogos de repositorios, como FAIRSharing, ayudan a entender las implicaciones más importantes de cada tipo de certificación sin necesidad de conocer los mecanismos por los cuales se logran.\\
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/re3data_certified_repo.png}
-    \caption{Registro de un repositorio donde se muestra declaradas sus certificaciones - re3data - Obtenido el 26/02/2025}
-    \label{fig:re3data_certified_repo}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/re3data_certified_repo.png}
+%    \caption{Registro de un repositorio donde se muestra declaradas sus certificaciones - re3data - Obtenido el 26/02/2025}
+%    \label{fig:re3data_certified_repo}
+%\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/datacite_certified_repo.png}
-    \caption{Repositorio como es desplegado donde se muestra declaradas sus certificaciones - DataCite Commons - Obtenido el 26/02/2025}
-    \label{fig:datacite_certified_repo}
-\end{figure}
+%%%%%%%%%%%%%%%%%%%%            CERTIFICACIONES  
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/datacite_certified_repo.png}
+%    \caption{Repositorio como es desplegado donde se muestra declaradas sus certificaciones - DataCite Commons - Obtenido el 26/02/2025}
+ %   \label{fig:datacite_certified_repo}
+%\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/fairsharing_certified_repo.png}
-    \caption{Repositorio como es desplegado donde se muestra declaradas sus certificaciones - FAIRSharing - Obtenido el 26/02/2025}
-    \label{fig:fairsharing_certified_repo}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/fairsharing_certified_repo.png}
+%    \caption{Repositorio como es desplegado donde se muestra declaradas sus certificaciones - FAIRSharing - Obtenido el 26/02/2025}
+%    \label{fig:fairsharing_certified_repo}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/certificates_relations.png}
+%    \caption{Representación gráfica de la certificación CoreTrusSeal y sus relaciones con otros políticas, estándares y certificaciones - FAIRSharing - Obtenido el 26/02/2025}
+%    \label{fig:certificates_relations}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  END CERTIFICACIONES
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/certificates_relations.png}
-    \caption{Representación gráfica de la certificación CoreTrusSeal y sus relaciones con otros políticas, estándares y certificaciones - FAIRSharing - Obtenido el 26/02/2025}
-    \label{fig:certificates_relations}
-\end{figure}
 
 %Las relaciones de los repositorios con diferentes instituciones también son desplegadas de manera oportuna y pueden servir para evaluar la sostenibilidad o las políticas asociadas. Catálogos como re3data o FAIRSharing proveen una visión clara de estas relaciones de manera resumida y centralizada (ver Fig.\ref{re3data_institutions} y Fig.\ref{fairsharing_institutions} respectivamente).\\
 
@@ -593,15 +591,17 @@ Búsqueda general de repositorios de datos de instigación disciplinares, de acc
  %   \label{fig:re3data_institutions}
 %\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{img/fairsharing_institutions.png}
-    \caption{instituciones relacionadas con un repositorio con sus correspondientes roles - FAIRSharing - Obtenida el 26/02/2025}
-    \label{fig:fairsharing_institutions}
-\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%      RELACIONES INSTITUCIONES
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\linewidth]{img/fairsharing_institutions.png}
+%    \caption{instituciones relacionadas con un repositorio con sus correspondientes roles - FAIRSharing - Obtenida el 26/02/2025}
+%    \label{fig:fairsharing_institutions}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Conocer el nivel de actividad que un repositorio presenta,  por ejemplo, la popularidad del repositorio en relación a ciertos tipos de contenidos, puede ayudar a ratificar que el repositorio esté funcionando correctamente. Algunos catálogos como DataCite Commons ofrecen estadísticas de uso de cada repositorio (mostrado en Fig.\ref{fig:datacite_commons_histograma}), como un modo de evaluar rápidamente la vigencia del mismo o el uso que su comunidad está haciendo de él.\\
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  histograma
 %\begin{figure}
 %    \centering
 %    \includegraphics[width=0.5\linewidth]{img/datacite_commons_histograma.png}
@@ -610,11 +610,10 @@ Búsqueda general de repositorios de datos de instigación disciplinares, de acc
  %   \caption{Obtenido desde DataCite Commons el 26/06/2025}
  %   \label{fig:datacite_commons_histograma}
 %\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   HISTOGRAMA
 
-Conocer la capacidad del repositorio para proveer o integrarse con ciertos servicios especializados en el área de investigación, así como las condiciones bajo las cuales los provee (precio del servicio o el nivel de disponibilidad del servicio), puede resultar decisivo para los investigadores.  
-Para enumerar algunos de estos servicios y funcionalidades se pueden mencionar la capacidad de realizar o recibir revisiones formales, la posibilidad de establecer períodos de embargo, asistencia técnica especializada o la disponibilidad de servicios de curaduría disciplinar.\\
-En particular, para el caso de repositorios de datos de investigación cualitativos, la presencia o integración de servicios como anonimización, o mecanismos de control de acceso resulta valiosa para los investigadores del área de ciencias sociales. 
-Catálogos como OpenAIRE ofrecen información sobre la integración de los diferentes repositorios con el ecosistema de servicios de la EOSC (Amnesia\footnote{\url{https://www.openaire.eu/amnesia-guide}}, OpenAIRE AAI \footnote{\url{https://catalogue.openaire.eu/service/openaire.aai/overview}}, Argos \footnote{\url{https://catalogue.openaire.eu/service/openaire.argos/overview}}, Zenodo \footnote{\url{https://zenodo.org/}}), como se puede ver en el filtro ``Compatibilite Level'' de la figura \ref{fig:openaire_gral_search}.\\
+
+
 
 %La falta de repositorios disciplinares o comunitarios no evidencia la falta de una comunidad activa, sin embargo, es importante convenir estándares locales, que, fuera del escenario ideal, facilitan la convergencia paulatina a un estándar común, para eso es imperativo que las prácticas de gestión de datos estén más extendidas como elemento transversal en las diferentes comunidades científicas.\\
 %Construír y compartir estas decisiones mediante vocabularios controlados, taxonomías u otros objetos semánticos es una práctica más frecuente en varias disciplinas que aumenta las posibilidades de reutilización de los datos generados.\\
@@ -622,99 +621,115 @@ Catálogos como OpenAIRE ofrecen información sobre la integración de los difer
 %\bchgon convenciones a las que puede llegar una comunidad. vamos a usar tal software en común, tales reglas y guías para nombrar las datos, etc. ¿Quizás la palabra acuerdos o convenciones es más adecuada? \echgon
 
 \section{Discusión}
-\bchedel
-A continuación, se presentan los hallazgos obtenidos a partir de los resultados de la aplicación de la metodología.
-%la adecuación de la información provista por los catálogos, para la evaluación de la calidad de los repositorios por parte de los investigadores. Este análisis se basa en los atributos de calidad identificados a partir de la revisión bibliográfica y consulta a experto.
-\echedel 
+
+A continuación, se presentan los hallazgos obtenidos a partir de los resultados de la aplicación de la metodología. Los hallazgos se sintetizan en el Cuadro~\ref{table:caractRepos}. En la primera columna se muestran las características de los repositorios que cumplen con las necesidades planteadas por los investigadores listados en la segunda columna, y en la tercera columna se listan los catálogos que, en menor o mayor medida, proveen información que permite a los investigadores conocer qué repositorios cumplen con la característica.  
 
 
+% \parbox{3cm}
 \begin{table} %[H]
      \begin{center}
 \scalebox{0.9}{
     \begin{tabular}{ | l | l | l | }  \hline 
-%    \vspace{1}
-%      &   &  \\  
-     \emph{Característica} & 
-     \emph{Necesidad del investigador} & 
-     \emph{Catálogo que provee la información} \\  \hline
-    Reputación &  Reconocimiento  & Re3data, FAIRSharing  \\ \hline
-    Usabilidad, interfaz intuitiva & Facilidad de uso & FAIRsharing      \\ \hline
-    Disponibilidad de metadatos &  Información de contexto & Re3data, FAIRSharing,   \\ 
-       &   & DataCite Commons, OpenAIRE \\  \hline
-    Cumplimiento de principios FAIR  &  Acceso y reuso de datos, & DataCite Commons, FAIRSharing,  \\
-        & interoperabilidad & OpenAIRE \\ \hline
- Servicios de preservación   & Disponibilidad e integridad de datos  & Re3data, FAIRsharing  \\
- a largo plazo  &   &   \\
+    %    \vspace{1}
+    &   &  \\  
+    \emph{Característica} & 
+    \emph{Necesidad del investigador} & 
+    \emph{Catálogo que provee la información} \\ [1.5mm]  \hline
+       &    &   \\
+    Actividad, Reputación &  Reconocimiento  & Re3data, FAIRSharing  \\ [1.5mm] \hline
+     &    &   \\
+     Apoyo técnico  &  Menos esfuerzo & FAIRsharing, DataCite Commons      \\ [1.5mm] \hline
+     &    &   \\
+    Disponibilidad de metadatos &  Información de contexto & FAIRSharing,    \\ 
+       &   & DataCite Commons, OpenAIRE \\ [1.5mm] \hline
+        &    &   \\
+    Cumplimiento de principios FAIR   &  Acceso y reuso de datos, & Re3data, FAIRSharing,  \\ 
+        & interoperabilidad & OpenAIRE \\ [1.5mm] \hline
+         &    &   \\
+ Sostenibilidad    & Disponibilidad e integridad  & Re3data, FAIRSharing  \\
+ Adhesión a políticas  &  de datos  &   \\ [1.5mm]
     \hline 
  \end{tabular} 
- }\end{center}
+}\end{center}
  
  \caption{Características de repositorios más valoradas por investigadores }
-     \label{table:comparison}
+     \label{table:caractRepos}
 \end{table}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-\bchregi  Presentar como hallazgos que engloban los problemas encontrados respecto a su correspondencia con lo que ofrecen los repositorios.) \\
+%\bchregi  Presentar como hallazgos que engloban los problemas encontrados respecto a su correspondencia con lo que ofrecen los repositorios.) \\
 
-La revisión bibliográfica permitió identificar varios factores que influyen en la elección de repositorios por parte de los investigadores. Entre ellos, se destacan:
+%La revisión bibliográfica permitió identificar varios factores que influyen en la elección de repositorios por parte de los investigadores. Entre ellos, se destacan:
 
-\begin{itemize}
-    \item \textbf{Reputación del repositorio}: Los investigadores tienden a preferir repositorios con buena reputación y reconocimiento dentro de su comunidad científica. ESTO PORQUE MAPEA CON LA NECESIDAD DE RECONOCIMIENTO.
-    \item \textbf{Facilidad de uso}: La interfaz del repositorio debe ser intuitiva y fácil de navegar, tanto para depositar como para acceder a los datos.\\ ESTO PORQUE MAPEA CON LA NECESIDAD DE MENOS ESFUERZO \bchedel usabilidad? \echedel.
-    \item \textbf{Disponibilidad de metadatos}: La existencia de metadatos completos y bien estructurados es crucial para facilitar la búsqueda y el descubrimiento de los datos.\\ ESTO PORQUE MAPEA CON LA NECESIDAD DE CONTEXTUALIZAR LOS DATOS.
-    \item \textbf{Cumplimiento de los principios FAIR}: Los repositorios que cumplen con los principios FAIR (Encontrables, Accesibles, Interoperables, Reutilizables) son altamente valorados, ya que garantizan la accesibilidad y la reutilización de los datos.
-    \item \textbf{Servicios de preservación a largo plazo}: Los investigadores buscan repositorios que aseguren la preservación de sus datos a lo largo del tiempo, garantizando su disponibilidad futura. \bchedel esto seria sostenibilidad o sostenibilidad? \echedel
-    \item \textbf{Apoyo técnico}: Un buen soporte técnico, que incluya documentación clara y asistencia personalizada, es fundamental para facilitar el uso del repositorio.ESTO PORQUE MAPEA CON LA NECESIDAD DE MENOS ESFUERZO.
-\end{itemize}
+%\begin{itemize}
+%    \item \textbf{Reputación del repositorio}: Los investigadores tienden a preferir repositorios con buena reputación y reconocimiento dentro de su comunidad científica. ESTO PORQUE MAPEA CON LA NECESIDAD DE RECONOCIMIENTO.
+%    \item \textbf{Facilidad de uso}: La interfaz del repositorio debe ser intuitiva y fácil de navegar, tanto para depositar como para acceder a los datos.\\ ESTO PORQUE MAPEA CON LA NECESIDAD DE MENOS ESFUERZO \bchedel usabilidad? \echedel.
+%    \item \textbf{Disponibilidad de metadatos}: La existencia de metadatos completos y bien estructurados es crucial para facilitar la búsqueda y el descubrimiento de los datos.\\ ESTO PORQUE MAPEA CON LA NECESIDAD DE CONTEXTUALIZAR LOS DATOS.
+%    \item \textbf{Cumplimiento de los principios FAIR}: Los repositorios que cumplen con los principios FAIR (Encontrables, Accesibles, Interoperables, Reutilizables) son altamente valorados, ya que garantizan la accesibilidad y la reutilización de los datos.
+%    \item \textbf{Servicios de preservación a largo plazo}: Los investigadores buscan repositorios que aseguren la preservación de sus datos a lo largo del tiempo, garantizando su disponibilidad futura. \bchedel esto seria sostenibilidad o sostenibilidad? \echedel
+%    \item \textbf{Apoyo técnico}: Un buen soporte técnico, que incluya documentación clara y asistencia personalizada, es fundamental para facilitar el uso del repositorio.ESTO PORQUE MAPEA CON LA NECESIDAD DE MENOS ESFUERZO.
+%\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bchedel
-para mi aca no queda bien que estos atributos de calidad que estan a continuacion se superpongan con los anteriores, porque para encabezar la lista anterior se dijo "La revisión bibliográfica permitió identificar varios factores que influyen en la elección de repositorios por parte de los investigadores...", entonces creo que habría que sintetizar los factores que se identificaron\\
-\echedel
-\bchgon
-Edel, ¿cual es la diferencia entre los factores y los atributos de calidad?
-\echgon \bchedel Creo que estamos hablando de lo mismo, pero me parece que màs bien son atributos de calidad, porque factores me parece muy genèrico  \echedel
+%\bchedel
+%para mi aca no queda bien que estos atributos de calidad que estan a continuacion se superpongan con los anteriores, porque para encabezar la lista anterior se dijo "La revisión bibliográfica permitió identificar varios factores que influyen en la elección de repositorios por parte de los investigadores...", entonces creo que habría que sintetizar los factores que se identificaron\\
+%\echedel
+%\bchgon
+%Edel, ¿cual es la diferencia entre los factores y los atributos de calidad?
+%\echgon \bchedel Creo que estamos hablando de lo mismo, pero me parece que màs bien son atributos de calidad, porque factores me parece muy genèrico  \echedel
+
+Las características presentadas en la primera columna del Cuadro~\ref{table:caractRepos} representan los atributos de los repositorios que se identifican como los más valorados por los investigadores, en el presente trabajo. A continuación 
+
+%\begin{itemize}
+ %   \item \textbf{Fiabilidad (Actividad)}: El repositorio debe cumplir con estándares de la comunidad disciplinar, tener actividad reconocida  gozando de buena reputación dentro de la comunidad científica y contar con el respaldo de organizaciones profesionales o instituciones académicas.
+  %  \item \textbf{Cumplimiento de los principios FAIR}: El repositorio debe proporcionar metadatos claros y admitir la interoperabilidad entre diferentes formatos de datos.Cumplir  con una estructura de gobierno clara y políticas transparentes que permitan la reusabilidad segura y ética.
+  %  \item \textbf{Reputación y reconocimiento}: El repositorio debe gozar de buena reputación dentro de la comunidad científica y contar con el respaldo de organizaciones profesionales o instituciones académicas.
+    %\item \textbf{Infraestructura técnica}: El repositorio debe contar con una infraestructura sólida en términos de capacidad de almacenamiento, seguridad de los datos y protocolos de respaldo.
+   % \item \textbf{Ayuda técnica}: El repositorio debe proporcionar documentación completa y %un buen soporte técnico para facilitar su uso.
+ %   \item \textbf{Sostenibilidad}: El repositorio debe contar con un modelo de financiación a largo plazo y un plan para garantizar su funcionamiento continuo y contempla planes de continuidad para evitar perdida de información.El repositorio debe contar con una infraestructura sólida en términos de capacidad de almacenamiento, seguridad de los datos y protocolos de respaldo.
+%\end{itemize}
+
 
 \begin{itemize}
-    \item \textbf{Fiabilidad}: El repositorio debe cumplir con estándares y principios establecidos, como los principios FAIR, y contar con una estructura de gobierno clara y políticas transparentes.
-    \item \textbf{Cumplimiento de los principios FAIR}: El repositorio debe proporcionar metadatos claros y admitir la interoperabilidad entre diferentes formatos de datos.
-    \item \textbf{Reputación y reconocimiento}: El repositorio debe gozar de buena reputación dentro de la comunidad científica y contar con el respaldo de organizaciones profesionales o instituciones académicas.
-    \item \textbf{Infraestructura técnica}: El repositorio debe contar con una infraestructura sólida en términos de capacidad de almacenamiento, seguridad de los datos y protocolos de respaldo.
-    \item \textbf{Documentación y soporte al usuario}: El repositorio debe proporcionar documentación completa y un buen soporte técnico para facilitar su uso.
-    \item \textbf{Sostenibilidad}: El repositorio debe contar con un modelo de financiación a largo plazo y un plan para garantizar su funcionamiento continuo y contempla planes de continuidad para evitar perdida de información.
+    \item \textbf{Actividad y Reputación)}: El repositorio debe cumplir con estándares de la comunidad disciplinar, tener actividad reconocida  gozando de buena reputación dentro de la comunidad científica y contar con el respaldo de organizaciones profesionales o instituciones académicas.
+    \item \textbf{Apoyo técnico}: El repositorio debe proporcionar documentación completa y un buen soporte técnico para facilitar su uso.
+    \item \textbf{Disponibilidad de metadatos}:  El repositorio debe contener metadatos descriptivos que proporcionen información de contexto de los datos, como el autor y propósito de la recolección, y la metodología utilizada. 
+    \item \textbf{Cumplimiento de los principios FAIR}: El repositorio debe proporcionar metadatos claros y admitir la interoperabilidad entre diferentes formatos de datos.Cumplir  con una estructura de gobierno clara y políticas transparentes que permitan la reusabilidad segura y ética.
+    %\item \textbf{Reputación y reconocimiento}: El repositorio debe gozar de buena reputación dentro de la comunidad científica y contar con el respaldo de organizaciones profesionales o instituciones académicas.
+    %\item \textbf{Infraestructura técnica}: El repositorio debe contar con una infraestructura sólida en términos de capacidad de almacenamiento, seguridad de los datos y protocolos de respaldo.
+    \item \textbf{Sostenibilidad y adhesión a políticas}: El repositorio debe contar con un modelo de financiación a largo plazo y un plan para garantizar su funcionamiento continuo y contempla planes de continuidad para evitar perdida de información.El repositorio debe contar con una infraestructura sólida en términos de capacidad de almacenamiento, seguridad de los datos y protocolos de respaldo.
 \end{itemize}
-\echregi
+
+
+
+%\echregi
 
 \section{Conclusiones y Trabajos futuros}
 
-\subsection*{Conclusiones}
+%\bchedel Este artículo presenta un análisis de las principales características trabajo analiza en
+%qu´e medida los repositorios de datos de investigaci´on responden a las necesidades t´ecnicas,
+%legales y ´eticas de los investigadores en educaci´on y ciencias sociales \echedel
 
-Este trabajo se desarrolló en el contexto de la investigación educativa y la publicación de datos de investigación asociados a esta área. Se reconoce que la investigación educativa comparte varias características con la investigación en general en lo que respecta a la gestión de datos, pero también presenta desafíos específicos relacionados con la heterogeneidad de los datos y las restricciones éticas y legales.\\
+%Este trabajo se desarrolló en el contexto de la investigación educativa y la publicación de datos de investigación asociados a esta área. Se reconoce que la investigación educativa comparte varias características con la investigación en general en lo que respecta a la gestión de datos, pero también presenta desafíos específicos relacionados con la heterogeneidad de los datos y las restricciones éticas y legales.\\
 
-El análisis realizado subraya la importancia de abordar las necesidades de los investigadores en relación con los repositorios de datos. Se identificó que la interoperabilidad, el apoyo institucional y la asistencia técnica son aspectos cruciales para la comunidad investigadora. Además, se constató un desconocimiento generalizado sobre las opciones disponibles de repositorios de datos, a pesar de que los investigadores reconocen la importancia de las prácticas de publicación de datos.\\
+%El análisis realizado subraya la importancia de abordar las necesidades de los investigadores en relación con los repositorios de datos. Se identificó que la interoperabilidad, el apoyo institucional y la asistencia técnica son aspectos cruciales para la comunidad investigadora. Además, se constató un desconocimiento generalizado sobre las opciones disponibles de repositorios de datos, a pesar de que los investigadores reconocen la importancia de las prácticas de publicación de datos.\\
 
-Es importante destacar la apertura de los investigadores hacia la publicación de datos y su reconocimiento de los beneficios que esto conlleva tanto para quienes publican como para quienes acceden a los datos. Sin embargo, las herramientas tecnológicas actuales no parecen ofrecer una solución integral que cubra todas las necesidades de los investigadores educativos en materia de publicación de datos.\\
+Es importante destacar la apertura de los investigadores hacia la publicación de datos y su reconocimiento de los beneficios que esto conlleva tanto para quienes publican como para quienes acceden a los datos. Sin embargo, los repositorios de datos actuales no parecen ofrecer una solución integral que cubra todas las necesidades de los investigadores educativos. \\
 
-A pesar de esta limitación, el estudio permitió realizar una evaluación comparativa de los catálogos de repositorios de datos de investigación. En este sentido, \textbf{FAIRSharing} se destaca como la herramienta que ofrece los mejores niveles de curaduría y calidad de datos. También se resalta su modelo de sostenibilidad y la transparencia de sus criterios y procesos. \textbf{FAIRSharing} proporciona una visión orgánica del proceso de publicación y de la infraestructura de investigación abierta. Debido a que la base de datos de \textbf{FAIRSharing} carece de algunos registros, se recomienda realizar una consulta paralela en \textbf{DataCite Commons}.\\
+A pesar de esta limitación, el estudio permitió realizar una evaluación comparativa de los catálogos de repositorios de datos de investigación. En este sentido, \textbf{FAIRSharing} se destaca como la herramienta que ofrece los mejores niveles de curaduría y calidad de datos. También se resalta su modelo de sostenibilidad y la transparencia de sus criterios y procesos. \textbf{FAIRSharing} proporciona una visión orgánica del proceso de publicación y de la infraestructura de investigación abierta. Sin embargo, no se recomienda su uso en exclusividad. Debido a que la base de datos de \textbf{FAIRSharing} carece de algunos registros, se recomienda realizar una consulta paralela en \textbf{DataCite Commons} y para obtener una mejor visualización de las vigencias de las certificaciones se recomienda usar \textbf{re3data}.\\
 
-En cuanto a la evolución de las tecnologías para la catalogación de repositorios, \textbf{re3data}, si bien sigue cumpliendo un rol fundamental como fuente primaria de información, ha sido superado por herramientas que ofrecen una mejor usabilidad.\\
+%En cuanto a la evolución de las tecnologías para la catalogación de repositorios, \textbf{re3data}, si bien sigue cumpliendo un rol fundamental como fuente primaria de información, ha sido superado por herramientas que ofrecen una mejor usabilidad.\\
 
-En conclusión, este estudio proporciona información valiosa para los investigadores educativos que buscan publicar sus datos de investigación. Al destacar los factores clave que influyen en la elección de repositorios y al evaluar las características de los catálogos de repositorios disponibles, se busca facilitar la toma de decisiones informadas y promover una mayor adopción de prácticas de datos abiertos en el campo de la investigación educativa.\\
-
-\subsection*{Trabajos futuros}
-
-Frente a las limitaciones que perjudican la visibilidad sobre la infraestructura de la ciencia, varios autores concuerdan en que es necesario mejorar la capacidad de descubrimiento de los repositorios y servicios disponibles en la infraestructura de investigación. \citep{Huber2024FAIR}\\
-
-El mismo artículo también señala la necesidad de mejorar la capacidad de los repositorios y la infraestructura de la ciencia de comprender o capturar información disciplinar. Artículos como \citet{ulrich_2024_10847707} proponen mecanismos para descubrir los servicios y capacidades de cada repositorio, aunque siguen requiriendo esfuerzos de estandarización por parte de los gestores de repositorios para ser de utilidad. Este tipo de propuestas potenciaría enormemente la calidad de los datos recolectados por los catálogos de repositorios, haciéndolos mucho más confiables y descriptivos.\\
+Frente a las limitaciones que perjudican la visibilidad, varios autores concuerdan en que es necesario mejorar la capacidad de descubrimiento de los repositorios y servicios disponibles, como lo señala recientemente \citet{Huber2024FAIR}. En ese mismo trabajo, también se señala la necesidad de mejorar la capacidad de los repositorios y la infraestructura para capturar diversa información disciplinar. Trabajos como \citet{ulrich_2024_10847707} proponen mecanismos para descubrir los servicios y capacidades de cada repositorio, aunque siguen requiriendo esfuerzos de estandarización por parte de los gestores de repositorios para ser de utilidad. Este tipo de propuestas potenciaría enormemente la calidad de los datos recolectados por los catálogos de repositorios, haciéndolos mucho más confiables y descriptivos.\\
 
 Otros artículos como \citet{Vogt_2025} incluso desdibujan el rol de los repositorios y se centran en los contenidos, proponiendo crear una capa de interoperabilidad semántica que logre unificar los recursos desde una perspectiva conciliadora para cada disciplina, facilitando el  acceso por parte de los investigadores no solo a los datos de investigación, sino a los recursos en general, desdibujando la línea que diferencia a los artículos de investigación de los datos de investigación o incluso de recursos externos al área de la investigación (eg: REAs, datos gubernamentales, software, etc.), conceptos que son difíciles de diferenciar para el grueso de los investigadores y que muchas veces puede no tener sentido diferenciar desde el punto de vista del investigador.\\
 
 Otras estrategias sugieren el uso de planes de gestión de datos (PGD) propuestos por \citet{bicarregui2012dmp} para transparentar el diálogo entre los diferentes actores durante el proceso de investigación y, en un paso posterior, plasmarlo en un documento estructurado y accionable automáticamente (maPGD), como propone \citet{simms2019_madmp}. Si bien el uso de PGDs no es nuevo, aún requiere incrementar su adopción antes de ser explotado en su totalidad.\\
 
-Este tipo de iniciativas contribuirían a acortar la brecha disciplinaria y promover el diálogo entre la gestión de datos y el conocimiento disciplinar.\\
+Este tipo de iniciativas contribuirán a acortar la brecha disciplinaria y promover el diálogo entre la gestión de datos y el conocimiento disciplinar.\\
 
 %    The Generalist Repository Ecosystem Initiative (GREI) has created a helpful flowchart to direct researchers to the generalist data repository option that best suits the needs of their project.   https://dataworks.faseb.org/dataworks-digest/grei-releases-flowchart
 
